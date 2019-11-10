@@ -1,6 +1,6 @@
-# RileyLink
+# Loop2omnipod
 
-A custom designed Bluetooth Smart (BLE) to Sub-1 GHz module. The fork focuses on reducing size of the device.
+A device that bridges the communication between Loop software application and Omnipon and Medtronics insulin pumps. This is a fork from RileyLink, focusing on reducing size of the device and improving communication range.
 
 ### Hardware
 
