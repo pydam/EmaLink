@@ -6,7 +6,7 @@ A device that bridges the communication between Loop software application and Om
 
 See the [hardware](https://github.com/skupas/emalink/tree/master/hardware) directory for design files to build it. The hardware design is released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).  
 
-[Picture](https://github.com/skupas/EmaLink/blob/master/pictures/IMG_3533.png)
+![Picture](https://github.com/skupas/EmaLink/blob/master/pictures/IMG_3533.png)
 
 ### Firmware
 
