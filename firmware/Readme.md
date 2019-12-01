@@ -27,6 +27,6 @@ Note that you will need to sign up for an accounts to download both installers.
   - Click BGBuild menu item, and choose "Manually Select"
   - Choose My Computer -> C: -> Bluegiga -> blue-1.8.0-143 (or similar) -> bin -> bgbuild
 
-## Connecting the CC Debugger to the RileyLink
+## Connecting the CC Debugger to EmaLink
 
 <Picture to be added>
