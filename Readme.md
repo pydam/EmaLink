@@ -3,6 +3,10 @@
 A device that bridges the communication between Loop software application and Omnipod and Medtronic insulin pumps. This is a fork from RileyLink, focusing on reducing size of the device, improving communication range and extending battery life.
 Currently, a battery lifetime of ~60hours is expected with an Omnipod pump, further improvements are being pursued to bring it to over 80 hours.
 
+![Connected to Omnipod](https://github.com/sks01/EmaLink/blob/master/pictures/Omnipod_conn.jpeg)
+
+![Connected to Medtronic](https://github.com/sks01/EmaLink/blob/master/pictures/Medtronic_conn.jpeg)
+
 ### Case
 
 I have designed a new case to be 3D printed with TPU material. TPU is a flexbile material that cannot be shattered, this makes EmaLink
