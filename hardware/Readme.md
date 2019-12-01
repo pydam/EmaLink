@@ -1,7 +1,7 @@
 # EmaLink Hardware
 
- * board.sch - circuit schematic
- * board.brd - pcb design file
+ * board_v4.kicad_pcb - pcb design file
+ * board_v4.sch - circuit schematic
 
 ### Components
 
