@@ -7,19 +7,19 @@ A device that bridges the communication between Loop software application and Om
 I have designed a new case to be 3D printed with TPU material. TPU is a flexbile material that cannot be shattered, this makes EmaLink
 drop proof. You will still break it if you step on it ...
 
-![Case](https://github.com/skupas/EmaLink/blob/master/pictures/Case_front.png)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Case_front.png)
 
 You can see and edit the design in here: [Tinkercad](https://www.tinkercad.com/things/6nLdgedEDKC-emalinkcasetpu)
 
 ### Hardware
 
-See the [hardware](https://github.com/skupas/emalink/tree/master/hardware) directory for design files to build it. The hardware design is released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).  
+See the [hardware](https://github.com/sks01/emalink/tree/master/hardware) directory for design files to build it. The hardware design is released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).  
 
-![PCB](https://github.com/skupas/EmaLink/blob/master/pictures/PCB_top.png)
+![PCB](https://github.com/sks01/EmaLink/blob/master/pictures/PCB_top.png)
 
 ### Firmware
 
-The code in the [firmware](https://github.com/skupas/emalink/tree/master/firmware) directory runs on the hardware.  There are two main chips and thus two firmware images.
+The code in the [firmware](https://github.com/sks01/emalink/tree/master/firmware) directory runs on the hardware.  There are two main chips and thus two firmware images.
 
 ### LED Lights
 
