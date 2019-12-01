@@ -2,7 +2,14 @@
 
 A device that bridges the communication between Loop software application and Omnipon and Medtronic insulin pumps. This is a fork from RileyLink, focusing on reducing size of the device, improving communication range and extending battery life.
 
+### Case
+
+I have designed a new case to be 3D printed with TPU material. TPU is a flexbile material that cannot be shattered, this makes EmaLink
+drop proof. You will still break it if you step on it ...
+
 ![Case](https://github.com/skupas/EmaLink/blob/master/pictures/Case_front.png)
+
+You can see and edit the design in here: [Tinkercad](https://www.tinkercad.com/things/6nLdgedEDKC-emalinkcasetpu)
 
 ### Hardware
 
