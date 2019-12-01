@@ -2,11 +2,13 @@
 
 A device that bridges the communication between Loop software application and Omnipon and Medtronics insulin pumps. This is a fork from RileyLink, focusing on reducing size of the device, improving communication range and extending battery life.
 
+![Case](https://github.com/skupas/EmaLink/blob/master/pictures/Case front.png)
+
 ### Hardware
 
 See the [hardware](https://github.com/skupas/emalink/tree/master/hardware) directory for design files to build it. The hardware design is released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).  
 
-![Picture](https://github.com/skupas/EmaLink/blob/master/pictures/IMG_3533.png)
+![PCB](https://github.com/skupas/EmaLink/blob/master/pictures/PCB Top.png)
 
 ### Firmware
 
