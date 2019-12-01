@@ -12,6 +12,10 @@ drop proof. You will still break it if you step on it ...
 
 You can see and edit the design in here: [Tinkercad](https://www.tinkercad.com/things/6nLdgedEDKC-emalinkcasetpu)
 
+This case is 20x40x51 vs. the RileyLink SlimCase for Omnipod which is 34x16x72mm.
+
+![Size_comparison](https://github.com/sks01/EmaLink/blob/master/pictures/EmaLink_vs_SlimCase.PNG)
+
 ### Hardware
 
 See the [hardware](https://github.com/sks01/emalink/tree/master/hardware) directory for design files to build it. The hardware design is released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).  
