@@ -19,7 +19,7 @@ Windows machine:
 
 Note that you will need to sign up for an accounts to download both installers.
 
-3. Go to https://github.com/skupas/emalink and click the "Clone or download" option.
+3. Go to https://github.com/sks01/emalink and click the "Clone or download" option.
 4. Select "Download ZIP"
 5. Extract the Zip in your download directory.
 6. Double click on the Project file in the ble113_rfspy folder.
