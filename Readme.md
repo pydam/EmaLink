@@ -1,6 +1,7 @@
 # EmaLink
 
-A device that bridges the communication between Loop software application and Omnipon and Medtronic insulin pumps. This is a fork from RileyLink, focusing on reducing size of the device, improving communication range and extending battery life.
+A device that bridges the communication between Loop software application and Omnipod and Medtronic insulin pumps. This is a fork from RileyLink, focusing on reducing size of the device, improving communication range and extending battery life.
+Currently, a battery lifetime of ~60hours is expected with an Omnipod pump, further improvements are being pursued to bring it to over 80 hours.
 
 ### Case
 
