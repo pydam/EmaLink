@@ -3,10 +3,6 @@
  * board_v4.kicad_pcb - pcb design file
  * board_v4.sch - circuit schematic
 
-### Components
-
-The bom.csv file contains a list of parts and quantities
-
 ### PCB Assembly
 
 You will have to look at the schematic and the board design in Kicad to know where the parts go, and how they are oriented.
