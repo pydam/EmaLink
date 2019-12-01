@@ -1,6 +1,6 @@
 # EmaLink
 
-A device that bridges the communication between Loop software application and Omnipon and Medtronics insulin pumps. This is a fork from RileyLink, focusing on reducing size of the device, improving communication range and extending battery life.
+A device that bridges the communication between Loop software application and Omnipon and Medtronic insulin pumps. This is a fork from RileyLink, focusing on reducing size of the device, improving communication range and extending battery life.
 
 ![Case](https://github.com/skupas/EmaLink/blob/master/pictures/Case_front.png)
 
