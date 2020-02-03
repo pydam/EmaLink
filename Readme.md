@@ -12,9 +12,9 @@ Currently, a battery lifetime of ~60hours is expected with an Omnipod pump, furt
 I have designed a new case to be 3D printed with TPU material. TPU is a flexbile material that cannot be shattered, this makes EmaLink
 drop proof. You will still break it if you step on it ...
 
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Charging.jpg)
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Top_case.jpg)
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Back_case.jpg)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Charging.png)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Top_case.png)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Back_case.png)
 
 You can see and edit the design in here: [Tinkercad](https://www.tinkercad.com/things/6nLdgedEDKC-emalinkcasetpu)
 
@@ -26,8 +26,8 @@ This case is 20x40x51 vs. the RileyLink SlimCase for Omnipod which is 34x16x72mm
 
 See the [hardware](https://github.com/sks01/emalink/tree/master/hardware) directory for design files to build it. The hardware design is released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).  
 
-![PCB_top](https://github.com/sks01/EmaLink/blob/master/pictures/Top_3.2.1.jpg)
-![PCB_bottom](https://github.com/sks01/EmaLink/blob/master/pictures/Bottom_3.2.1.jpg)
+![PCB_top](https://github.com/sks01/EmaLink/blob/master/pictures/Top_3.2.1.png)
+![PCB_bottom](https://github.com/sks01/EmaLink/blob/master/pictures/Bottom_3.2.1.png)
 
 ### Firmware
 
