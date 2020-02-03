@@ -2,21 +2,13 @@
 #v0.1 - battery measurement and BLE read working
 #v0.3 
 	# repurpose P0_1 as output for baterry indicator RED LED
-	# introduce 5 sec timout to stop timer from calling do_spi() and wake-up CC
-	# buzzer activate when low battery
-	# introduce wake-up int for CC
-#v3.0
-	# remove "introduce 5 sec timout to stop timer from calling do_spi() and wake-up CC"
-	# remove "introduce wake-up int for CC"
-	# remove buzzer related code
-	# version updated to "3.0"
 #v3.1
 	# call do_spi every 10 seconds after a 10 seconds timeout from the start of a command
 	# improve red led warning when low battery to no impact SPI (delay no longer needed for buzzer)
 	# version updated to "3.1"
 #v3.1.1
 	# Renamed to EmaLink
-#v3.2.0
+#v3.2.1
 	# light red and green leds for 2 seconds at start-up
 	# increase green blink frequency to 1Hz 
 	# version updated to "3.2.1"
