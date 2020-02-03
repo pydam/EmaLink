@@ -2,12 +2,6 @@
 #v0.1 - battery measurement and BLE read working
 #v0.3 
 	# repurpose P0_1 as output for baterry indicator RED LED
-	# introduce 5 sec timout to stop timer from calling do_spi() and wake-up CC
-	# buzzer activate when low battery
-	# introduce wake-up int for CC
-#v0.4
-	# remove "introduce 5 sec timout to stop timer from calling do_spi() and wake-up CC"
-	# remove "introduce wake-up int for CC"
 #v3.0
 	# version changed to "3.0"
 #v3.0.1
