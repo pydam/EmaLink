@@ -4,7 +4,7 @@ There are two microprocessors on the EmaLink board; a ble113 module, and a cc111
 
 ## CC1110 Firmware
 
-For the cc1110, you should install the latest [subg_rfspy](https://github.com/sks01/subg_rfspy) firmware or the alternative [emalink_rfspy](https://github.com/sks01/EmaLink/blob/master/firmware/cc1110/cc1110_emalink_2.2.hex) for omnipod pumps. This version saves some power, your battery lifetime will increase. This version was not yet tested fully with Medtronics pumps, do not use it.
+For the cc1110, you should install the latest [subg_rfspy](https://github.com/sks01/subg_rfspy) firmware or the alternative [emalink_rfspy](https://github.com/sks01/EmaLink/blob/master/firmware/cc1110/cc1110_emalink_3.5.hex) for omnipod pumps. This version saves some power, your battery lifetime will increase. This version was not yet tested fully with Medtronics pumps, do not use it.
 
 You can then use the following tools to write the firmware:
 
