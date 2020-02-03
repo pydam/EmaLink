@@ -1,7 +1,7 @@
 # EmaLink
 
 A device that bridges the communication between Loop software application and Omnipod and Medtronic insulin pumps. This is a fork from RileyLink, focusing on reducing size of the device, improving communication range and extending battery life.
-Currently, a battery lifetime of ~60hours is expected with an Omnipod pump, further improvements are being pursued to bring it to over 80 hours.
+Currently, a battery lifetime of 3-4 days is expected with an Omnipod pump.
 
 ![Connected to Omnipod](https://github.com/sks01/EmaLink/blob/master/pictures/Omnipod_conn.jpeg)
 
@@ -35,7 +35,7 @@ The code in the [firmware](https://github.com/sks01/emalink/tree/master/firmware
 
 ### LED Lights
 
-There are 3 leds on the back of the device: one orange, one red and the last one green. The green led blinks every 5 seconds while the module is connected over BLE and the battery in charged above 20%. The red led indicate battery status: one will start blinking at 5 seconds interval once the battery drops below 20%. The orange led will turn on once you connect the charger. Once the battery is fully charged, the orange led will turn off, blinking every minute or so while the charger is connected. 
+There are 3 leds on the back of the device: one orange, one red and the last one green. The green led blinks every second while the module is connected over BLE and the battery in charged above 20%. The red led indicate battery status: one will start blinking every second once the battery drops below 20%. The orange led will turn on once you connect the charger. Once the battery is fully charged, the orange led will turn off, blinking every minute or so while the charger is connected. 
 
 ### License
 
