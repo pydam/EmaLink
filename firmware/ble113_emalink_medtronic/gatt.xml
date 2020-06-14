@@ -43,12 +43,12 @@
     <characteristic uuid="d93b2af0-1e28-11e4-8c21-0800200c9a66" id="xgatt_custom_name">
 			<description>Custom Name</description>
       <properties write="true" read="true" />
-      <value type="utf-8" length="20" variable_length="true">RileyLink</value>
+      <value type="utf-8" length="20" variable_length="true">EmaLink</value>
     </characteristic>
 		<characteristic uuid="30d99dc9-7c91-4295-a051-0a104d238cf2">
 			<description>Version</description>
       <properties read="true" const="true"/>
-      <value>ble_rfspy 3.0.1</value>
+      <value>ble_rfspy 3.5</value>
     </characteristic>
 		<characteristic uuid="c6d84241-f1a7-4f9c-a25f-fce16732f14e" id="xgatt_led_mode">
 			<description>LED Mode</description>

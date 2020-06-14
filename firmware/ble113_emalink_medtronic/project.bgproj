@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project>
     <gatt in="gatt.xml" />
-    <device type="ble113" memory="128"/>
+    <device type="ble113" memory="256"/>
     <hardware in="hardware.xml" />    
     <script in="main.bgs" />
     <usb_main in="cdc.xml" />

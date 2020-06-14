@@ -2,15 +2,39 @@
 #v0.1 - battery measurement and BLE read working
 #v0.3 
 	# repurpose P0_1 as output for baterry indicator RED LED
+	# introduce 5 sec timout to stop timer from calling do_spi() and wake-up CC
+	# buzzer activate when low battery
+	# introduce wake-up int for CC
 #v3.0
-	# version changed to "3.0"
-#v3.0.1
+	# remove "introduce 5 sec timout to stop timer from calling do_spi() and wake-up CC"
+	# remove "introduce wake-up int for CC"
+	# remove buzzer related code
+	# version updated to "3.0"
+#v3.1
+	# call do_spi every 10 seconds after a 10 seconds timeout from the start of a command
+	# improve red led warning when low battery to no impact SPI (delay no longer needed for buzzer)
+	# version updated to "3.1"
+#v3.1.1
+	# Renamed to EmaLink
+#v3.2.1
 	# light red and green leds for 2 seconds at start-up
 	# increase green blink frequency to 1Hz 
-	# version updated to "3.0.1"
-	
-#todo
+	# version updated to "3.2.1"
+#v3.2.2
+	# increase command timeout to 15 sec to take care of medtronic that had 12s timout in pump scan
+#v3.3
+	# replaced timeout with waiting for comand response; may drain the battery faster when a response does not come, should add some timeout?
+#v3.4
+	#split SPI command in separate commands to give time for CC to enter faster speed; allows use of 1.5Mhz idle speed for CC 
+#v3.5
+	#use lookup table for battery capacity calculation
 
+#todo
+#improve accuracy of voltage to capacity look-up, 8 bit might not be enough for voltage ...
+const bat_voltage_LSB()="\xC7\x79\x2B\xDD\x8F\x41\xF3\xA5\x57\x09\xBB\x1F\x83\xE7\x99\xAF\x61\x13\xC5\x77\x29\xDB\x8C\x3E\xF0\xA2\x54\x06\xB8\x6A\x1C\xCE\x80\x32\xE4\x96\x48\xFA\xAC\x5E\x10\x74\x26\xD8\x3C\x04\x7E\xAA\x3A\x43"
+const bat_voltage_MSB()="\x7E\x7E\x7E\x7D\x7D\x7D\x7C\x7C\x7C\x7C\x7B\x7B\x7A\x79\x79\x78\x78\x78\x77\x77\x77\x76\x76\x76\x75\x75\x75\x75\x74\x74\x74\x73\x73\x73\x72\x72\x72\x71\x71\x71\x71\x70\x70\x6F\x6F\x6E\x6C\x6A\x68\x64"
+const bat_charge()=		"\x64\x63\x62\x60\x5F\x5E\x5D\x5B\x5A\x58\x56\x54\x53\x51\x50\x4F\x4E\x4D\x49\x48\x45\x43\x41\x3F\x3C\x3A\x39\x36\x34\x30\x2E\x2B\x29\x25\x23\x20\x1E\x1B\x19\x17\x14\x0C\x0A\x09\x07\x06\x05\x04\x02\x01"
+dim bat_idx
 
 dim tmp(2)
 dim spi_in_buf(255)
@@ -44,6 +68,7 @@ dim timer_tick_count
 dim timer_update_count
 dim led_mode
 dim num_iterations
+dim comm_in_progress
 
 #variable to save handle
 dim batconn_handle
@@ -61,18 +86,17 @@ event system_boot(major,minor,patch,build,ll_version,protocol,hw)
   
 	call flash_ps_load($8000)(result, name_len, name(0:name_len))
 	if result != 0 then
-		name_len = 9
-		name(0:1) = $52 # R
-		name(1:1) = $69 # i
-		name(2:1) = $6c # l
-		name(3:1) = $65 # e
-		name(4:1) = $79 # y
-		name(5:1) = $4c # L
-		name(6:1) = $69 # i
-		name(7:1) = $6e # n
-		name(8:1) = $6b # k
+		name_len = 7
+		name(0:1) = $45 # E
+		name(1:1) = $6d # m
+		name(2:1) = $61 # a
+		name(3:1) = $4c # L
+		name(4:1) = $69 # i
+		name(5:1) = $6e # n
+		name(6:1) = $6b # k
 	end if
 
+	#call gap_set_adv_parameters(1600, 4000, 1)  #Min interval 1000ms, max interval 2500ms, use onlt 1 channel - does not help when connected
 	
 	call gap_set_mode(gap_general_discoverable,gap_undirected_connectable) #start advertising in connectible mode
 
@@ -88,7 +112,7 @@ event system_boot(major,minor,patch,build,ll_version,protocol,hw)
 	end while
 	call hardware_io_port_write(0, $3, 3) #Turn P0_0 (green led), P0_1 (red led) off
 	
-	call hardware_io_port_config_direction(1, $03) #Make P1_0 (buzz1), P1_1 (buzz2)
+	#call hardware_io_port_config_direction(1, $03) #Make P1_0 (buzz1), P1_1 (buzz2)
 	
 	memset(spi_out_buf(0), $11, 255) #Init output buffer
 
@@ -99,7 +123,7 @@ event system_boot(major,minor,patch,build,ll_version,protocol,hw)
 end
 
 procedure do_spi()
-  if in_spi = 1 then
+  if in_spi = 1 then	#apelat de un event in timp ce procesa deja
     return
   end if
 
@@ -110,12 +134,14 @@ procedure do_spi()
   # Do not send length byte at beginning of spi_out_buf
   if spi_out_buf_len > 0 then
     spi_out_buf_len = spi_out_buf_len - 1
+	comm_in_progress = 1	#se trime o comanda
   end if
 
   tmp(0:1) = $99
   tmp(1:1) = spi_out_buf_len
   #comunica cat de mult are de transmis si afla cat de mult are de receptionat
-  call hardware_spi_transfer(0,2,tmp(0:2))(result,channel,tlen,tmp(0:2)) 
+  call hardware_spi_transfer(0,1,tmp(0:1))(result,channel,tlen,tmp(0:1)) 
+  call hardware_spi_transfer(0,1,tmp(1:2))(result,channel,tlen,tmp(1:2)) 
   slave_bytes_avail = tmp(1:1)
   #foloseste cea mai mare lungime dintre datele de trimis si cele de primit
   spi_xfer_size = slave_bytes_avail
@@ -129,7 +155,7 @@ procedure do_spi()
     spi_batch_size = 10
   end if
 
-  #transmite tot ce are de transmis sau mai mult in cazul in care are mai multe de receptionat
+  #transmite tot ce are de transmis sau mai mult in cazul in care are mai multe de receptionat, in pachete de 10 bytes
   while spi_batch_size > 0 
     call hardware_spi_transfer(0,spi_batch_size,spi_out_buf(spi_batch_offset+1:spi_batch_size))(result,channel,tlen,spi_in_buf(spi_batch_offset:spi_batch_size))
     spi_batch_offset = spi_batch_offset + spi_batch_size
@@ -139,18 +165,21 @@ procedure do_spi()
     end if
   end while
 
-  memset(spi_out_buf(0), $11, spi_out_buf_len)
-  spi_out_buf_len = 0
-  spi_in_buf_len = slave_bytes_avail
-
   call hardware_io_port_write(0, $10, $10) #dezactiveaza SPI_SS
 
   if slave_bytes_avail > 0 then #am receptionat ceva
-    waiting_for_client = 1 #nu mai citim nimic de la SPI pana cand nu trimitem prin BLE
+	if spi_out_buf_len = 0 then #s-a receptionat ceva o comanda si nu s-a trimis una noua
+		comm_in_progress = 0	#deci nu mai e nici o comanda in progress
+	end if
+    waiting_for_client = 1 #nu mai citim nimic de la SPI pana cand nu trimitem prin BLE batch-ul curent, poate fi pana la maximum SPI_BUF_LEN = 64
     response_count = response_count + 1 #numarul de raspunsuri de la PAD
     call attributes_write(xgatt_response_count,0,1,response_count)
     #call set_data_led(1) //this output is now used for battery indicator LED
   end if
+
+  memset(spi_out_buf(0), $11, spi_out_buf_len) #curatam buferul de iesire SPI, am transmis ce era in el
+  spi_out_buf_len = 0
+  spi_in_buf_len = slave_bytes_avail
 
   in_spi = 0
 end
@@ -178,6 +207,7 @@ event attributes_value(connection, reason, handle, offset, value_len, value_data
 		#call power_on_CC()	#activate power to CC and wait for it to stabilize
 		
         call do_spi()  #trebuie sa trimitem prin SPI la CC -> POD; comunicarea cu POD incepe (1)
+		
       end if
     end if
   end if
@@ -215,10 +245,10 @@ event attributes_user_read_request(connection, handle, offset, maxsize)
       call attributes_user_read_response(connection,0,0,spi_in_buf(0:0))
     end if
 
-    if waiting_for_client = 0 #nimic care asteapta sa fie trimis prin BLE
+    #if waiting_for_client = 0 #nimic care asteapta sa fie trimis prin BLE
       # call set_data_led(0)
-      call do_spi() #dar poate avem ceva date noi de la POD via CC via SPI?
-    end if
+     # call do_spi() #dar poate avem ceva date noi de la POD via CC via SPI?
+    #end if
 
   end if
 
@@ -230,56 +260,45 @@ event attributes_user_read_request(connection, handle, offset, maxsize)
 end
 
 event hardware_adc_result(input,value)
-  #scale value to range 0-100
-  #measurement range is 32768=1.24v*3.49=4.32V
-  #new battery ADC measurement is 31782=4.32v
-  #minimum battery voltage is 3.0v=3.0v/4.32v*32768= 22756
-  #31782-22756=9026
+	#use lookup table to report current baterry capacity based on voltage
+	#measurement range is 32768=1.24v*3.53=4.37V => 4.20v = 32768*4.20/4.37 = 31493
+	  
+	bat_idx = 0 #strangs start from 0
+	while value < bat_voltage_LSB(bat_idx:1) + bat_voltage_MSB(bat_idx:1)*256 #compare to voltage look-up table
+		bat_idx = bat_idx + 1
+	end while
 
-  batresult=(value-22756)*100/9026
-  
-  #clip to 100%
-  if batresult>100 then
-    batresult=100
-  end if
-  
-  #clip to 0%
-  if batresult<0 then
-    batresult=0
-  end if
+	batresult = bat_charge(bat_idx:1)
 
-  tmp(0:1)=batresult
-
-  if batconn_handle<$ff then    #if connection handle is valid
-    call attributes_user_read_response(batconn_handle,0,1,tmp(0:1))
-    batconn_handle=$ff
-  end if
+	if batconn_handle<$ff then    #if connection handle is valid
+		call attributes_user_read_response(batconn_handle,0,1,batresult)
+		batconn_handle=$ff
+	end if
 end
 
 # Timer event listener to poll data from spi
 event hardware_soft_timer(handle)
-	if waiting_for_client != 1 && connected = 1 then #nu avem ceva de trimis prin BLE, hai sa verificam daca sunt date noi de la POD
-		call do_spi()
+
+	if connected = 1 && waiting_for_client = 0 && comm_in_progress = 1	then #check if CC has an answer for BLE command, unless we are waiting for Loop to take the data from BLE buffer
+		call do_spi()			
 	end if
 
-	led_timer = led_timer + 1 					#increment every 50ms
-	if led_timer=20 then 						#blink led(s) every 1 seconds
-		if batresult<20 then 						#battery below 20% capacity and connected
+	led_timer = led_timer + 1 						#increment every 50ms
+	if led_timer = 20 then 							#every 1 second
+		if batresult < 20 then 						#battery below 20% capacity and connected
 			call hardware_io_port_write(0, 2, 0) 	#light only battery warning led
-			call hardware_io_port_write(0, 2, 2)	#battery warning led off
-			led_timer=led_timer+10 					#increment for the passed 500ms
-			timer_tick_count=timer_tick_count+1		#increment for the passed 500ms
 		else										#battery is still ok
-			if connected=1 then						#and BLE is connected
-				call hardware_io_port_write(0, 1, 0) #light connected led
+			if connected = 1 then					#and BLE is connected
+				call hardware_io_port_write(0, 1, 0) #turn on green led
 			end if
 		end if
 	end if 
   
-	if led_timer>22 then 						#reset after 1.1s
-		led_timer=0
-		call hardware_adc_read(6, 3, 0)				#trigger ADC read on P0_6, full 12-bit decimation, 1.24v reference
-		call hardware_io_port_write(0, $1, 1)		#connection led off
+	if led_timer>22 then 						#after 1.1s
+		led_timer=0								#reset timer
+		call hardware_adc_read(6, 3, 0)			#trigger ADC read on P0_6, full 12-bit decimation, 1.24v reference
+		call hardware_io_port_write(0, $1, 1)	#green led off
+		call hardware_io_port_write(0, 2, 2)	#red led off
 	end if 
   
 	timer_tick_count = timer_tick_count + 1
