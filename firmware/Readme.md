@@ -23,7 +23,7 @@ Note that you will need to sign up for an accounts to download both installers.
 3. Go to https://github.com/sks01/emalink and click the "Clone or download" option.
 4. Select "Download ZIP"
 5. Extract the Zip in your download directory.
-6. Double click on the Project file in the ble113_emalink_omnipod or ble113_emalink_medtronic folder.
+6. Double click on the Project file in the ble_firmware.
 7. If you receive the message "Unable to automatically select BGBuild":
   - Click BGBuild menu item, and choose "Manually Select"
   - Choose My Computer -> C: -> Bluegiga -> blue-1.8.0-143 (or similar) -> bin -> bgbuild
