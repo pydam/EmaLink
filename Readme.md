@@ -1,7 +1,7 @@
 # EmaLink
 
 A device that bridges the communication between Loop software application and Omnipod and Medtronic insulin pumps. This is a fork from RileyLink, focusing on reducing size of the device, improving communication range and extending battery life. Also, you can charge EmaLink with any micro USB charger - much broader available vs. the mini port USB used by RileyLink.
-Currently, a battery lifetime of >110 hours is expected with an Omnipod pump. 
+Currently, a battery lifetime of 72-110 hours is expected with Loop and an Omnipod pump. For Medtronic pumps, battery lifetime is expected to be over 48 hours, depending heavily on the application used and its settings.
 
 ![Connected to Omnipod](https://github.com/sks01/EmaLink/blob/master/pictures/Omnipod_conn.jpeg)
 
