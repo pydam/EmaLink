@@ -10,7 +10,7 @@ drop proof. You will still break it if you step on it ...
 As of July 2020, the following EmaLink versions are known to exist:
 
 EmaLink Medtronic Maxx (PCB: 3.8, Battery 1050mAh)
-•	Size: 55*40*21 mm, oval design [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
+•	Size: 55x40x21 mm, oval design [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
 •	Weight: 34g
 •	Battery life: 
   o	 Loop / FreeAPS with Medtronic pump - 11 days (estimated, to be confirmed)
@@ -20,7 +20,7 @@ EmaLink Medtronic Maxx (PCB: 3.8, Battery 1050mAh)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Maxx.png)
 
 (to be retired)EmaLink Classic (PCB: 3.2/3.3, Battery: 400-500mAh)
-•	Size: 56*40*22mm, oval design [Tinkercad](https://www.tinkercad.com/things/86kA2tHxB7g)
+•	Size: 56x40x22mm, oval design [Tinkercad](https://www.tinkercad.com/things/86kA2tHxB7g)
 •	Weight: 26g
 •	Battery life: 
   o	 Loop / FreeAPS with Omnipod pod: 5-7 days (confirmed)
@@ -30,7 +30,7 @@ EmaLink Medtronic Maxx (PCB: 3.8, Battery 1050mAh)
  ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Classic_3_2.png)
 
 EmaLink Classic (PCB: 3.7/3.8, Battery: 500mAh)
-•	Size: 49*40*20mm, oval design [Tinkercad](https://www.tinkercad.com/things/7E4MjrtWril)
+•	Size: 49x40x20mm, oval design [Tinkercad](https://www.tinkercad.com/things/7E4MjrtWril)
 •	Weight: 24g
 •	Battery life: 
   o	 Loop / FreeAPS with Omnipod pod: 6.5-7 days (confirmed)
@@ -40,21 +40,21 @@ EmaLink Classic (PCB: 3.7/3.8, Battery: 500mAh)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Classic_3_7.png)
 
 EmaLink Medium (PCB: 3.7/3.8, Battery: 500mAh)
-•	Size: 45*40*19mm, square with 2 caps, dustproof, splash resistant (may survive for 30s underwater) [Tinkercad](https://www.tinkercad.com/things/9jWhSiQkAbo)
+•	Size: 45x40x19mm, square with 2 caps, dustproof, splash resistant (may survive for 30s underwater) [Tinkercad](https://www.tinkercad.com/things/9jWhSiQkAbo)
 •	Weight: 24g
 •	Battery life: same as for Classic
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium.png)
 
 EmaLink NeoClassic(PCB: 3.7/3.8, Battery: 500mAh)
-•	Size: 45*40*19mm, flatten oval [Tinkercad](https://www.tinkercad.com/things/3WlRqooTBQr)
+•	Size: 45x40x19mm, flatten oval [Tinkercad](https://www.tinkercad.com/things/3WlRqooTBQr)
 •	Weight: 25g
 •	Battery life: same as for Classic
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/NeoClassic.png)
 
 EmaLink XS (PCB: 3.7/3.8, Battery: 250mAh) 
-•	Size: 43*40*16mm, square with 2 caps, dustproof, splash resistant (may survive for 30s underwater) [Tinkercad](https://www.tinkercad.com/things/0KXGFfexw8S)
+•	Size: 43x40x16mm, square with 2 caps, dustproof, splash resistant (may survive for 30s underwater) [Tinkercad](https://www.tinkercad.com/things/0KXGFfexw8S)
 •	Weight: 23g
 •	Battery life: 
   o	 Loop / FreeAPS with Omnipod pod: 3-3.5 days (estimated, to be confirmed)
