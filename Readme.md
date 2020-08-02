@@ -62,7 +62,7 @@ As of July 2020, the following EmaLink versions are known to exist:
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/XS.png)
 
 **EmaLink Medtronic XXS** (PCB: 3.7/3.8, Battery: 250mAh) 
-•	Size: 43x40x14mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/0KXGFfexw8S)
+•	Size: 43x40x14mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/fs7lsaBEtP7)
 •	Weight: 22g
 •	Battery life: 
   o	 Loop / FreeAPS with Medtronic pump: 2.5-3days (confirmed)
