@@ -63,6 +63,16 @@ As of July 2020, the following EmaLink versions are known to exist:
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Comparison.png)
 
+**EmaLink XXS** (PCB: 3.7/3.8, Battery: 250mAh) 
+•	Size: 43x40x14mm, square with 2 caps, dustproof, splash resistant (may survive for 30s underwater) [Tinkercad](https://www.tinkercad.com/things/0KXGFfexw8S)
+•	Weight: 22g
+•	Battery life: 
+  o	 Loop / FreeAPS with Omnipod pod: 3-3.5 days (estimated, to be confirmed)
+  o	 Loop / FreeAPS with Medtronic pump: 2.5-3days (confirmed)
+  o	 AndroidAPS with Medtronic pums: 1.5 days (estimated, to be confirmed)
+
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/XXS.png)
+
 ### Hardware
 
 See the [hardware](https://github.com/sks01/emalink/tree/master/hardware) directory for design files to build it. The hardware design is released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).  
