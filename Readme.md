@@ -40,7 +40,7 @@ As of July 2020, the following EmaLink versions are known to exist:
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Classic_3_7.png)
 
 **EmaLink Medium** (PCB: 3.7/3.8, Battery: 500mAh)
-•	Size: 45x40x19mm, square with 2 caps, dustproof, splash resistant (may survive for 30s underwater) [Tinkercad](https://www.tinkercad.com/things/9jWhSiQkAbo)
+•	Size: 45x40x19mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/9jWhSiQkAbo)
 •	Weight: 24g
 •	Battery life: same as for Classic
 
@@ -53,21 +53,18 @@ As of July 2020, the following EmaLink versions are known to exist:
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/NeoClassic.png)
 
-**EmaLink XS** (PCB: 3.7/3.8, Battery: 250mAh) 
-•	Size: 43x40x16mm, square with 2 caps, dustproof, splash resistant (may survive for 30s underwater) [Tinkercad](https://www.tinkercad.com/things/0KXGFfexw8S)
+**EmaLink Omnipod XS** (PCB: 3.7/3.8, Battery: 250mAh) 
+•	Size: 43x40x16mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/0KXGFfexw8S)
 •	Weight: 23g
 •	Battery life: 
   o	 Loop / FreeAPS with Omnipod pod: 3-3.5 days (estimated, to be confirmed)
-  o	 Loop / FreeAPS with Medtronic pump: 2.5-3days (confirmed)
-  o	 AndroidAPS with Medtronic pums: 1.5 days (estimated, to be confirmed)
 
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Comparison.png)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/XS.png)
 
-**EmaLink XXS** (PCB: 3.7/3.8, Battery: 250mAh) 
-•	Size: 43x40x14mm, square with 2 caps, dustproof, splash resistant (may survive for 30s underwater) [Tinkercad](https://www.tinkercad.com/things/0KXGFfexw8S)
+**EmaLink Medtronic XXS** (PCB: 3.7/3.8, Battery: 250mAh) 
+•	Size: 43x40x14mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/0KXGFfexw8S)
 •	Weight: 22g
 •	Battery life: 
-  o	 Loop / FreeAPS with Omnipod pod: 3-3.5 days (estimated, to be confirmed)
   o	 Loop / FreeAPS with Medtronic pump: 2.5-3days (confirmed)
   o	 AndroidAPS with Medtronic pums: 1.5 days (estimated, to be confirmed)
 
