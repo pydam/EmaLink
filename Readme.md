@@ -69,7 +69,7 @@ See the [hardware](https://github.com/sks01/emalink/tree/master/hardware) direct
 
 ![PCB_top_Omnipod](https://github.com/sks01/EmaLink/blob/master/pictures/PCB_top_Omnipod.png)
 ![PCB_top_Medtronic](https://github.com/sks01/EmaLink/blob/master/pictures/PCB_top_Medtronic.png)
-![PCB_back](https://github.com/sks01/EmaLink/blob/master/pictures/PCB_bottom.png)
+![PCB_back](https://github.com/sks01/EmaLink/blob/master/pictures/PCB_back.png)
 
 ### Firmware
 
