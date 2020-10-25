@@ -13,62 +13,39 @@ As of July 2020, the following EmaLink versions are known to exist:
 •	Size: 55x40x21 mm, oval design [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
 •	Weight: 34g
 •	Battery life: 
-  o	 Loop / FreeAPS with Medtronic pump - 11 days (estimated, to be confirmed)
-  o	 AndroidAPS with Medtronic pums - 5 days (estimated, to be confirmed)
-•	Not available for Omnipod, the 433Mhz antenna would not fit nicely in this case design 
+  o	 Loop / FreeAPS with Medtronic pump - 9+ days
+  o	 AndroidAPS with Medtronic pums - 5+ days (estimated, to be confirmed)
+•	Not available for Omnipod
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Maxx.png)
 
-**(to be retired)EmaLink Classic** (PCB: 3.2/3.3, Battery: 400-500mAh)
-•	Size: 56x40x22mm, oval design [Tinkercad](https://www.tinkercad.com/things/86kA2tHxB7g)
-•	Weight: 26g
-•	Battery life: 
-  o	 Loop / FreeAPS with Omnipod pod: 5-7 days (confirmed)
-  o	 Loop / FreeAPS with Medtronic pump: 3.5-5 days (confirmed)
-  o	 AndroidAPS with Medtronic pums: 2.5-3 days (confirmed)
-  
- ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Classic_3_2.png)
-
-**EmaLink Classic** (PCB: 3.7/3.8, Battery: 500mAh)
-•	Size: 49x40x20mm, oval design [Tinkercad](https://www.tinkercad.com/things/7E4MjrtWril)
+**EmaLink Medium** (PCB: 3.7/3.8/3.9, Battery: 550mAh)
+•	Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/9jWhSiQkAbo)
 •	Weight: 24g
 •	Battery life: 
-  o	 Loop / FreeAPS with Omnipod pod: 6.5-7 days (confirmed)
-  o	 Loop / FreeAPS with Medtronic pump: 4.5-5 days (estimated, to be confirmed)
-  o	 AndroidAPS with Medtronic pums: 3 days (estimated, to be confirmed)
-  
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Classic_3_7.png)
-
-**EmaLink Medium** (PCB: 3.7/3.8, Battery: 500mAh)
-•	Size: 45x40x19mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/9jWhSiQkAbo)
-•	Weight: 24g
-•	Battery life: same as for Classic
+  o	 Loop / FreeAPS with Omnipod pod: 7 days
+  o	 Loop / FreeAPS with Medtronic pump: 5-6 days
+  o	 AndroidAPS with Medtronic pums: 3 days
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium.png)
 
-**EmaLink NeoClassic** (PCB: 3.7/3.8, Battery: 500mAh)
-•	Size: 45x40x19mm, flatten oval [Tinkercad](https://www.tinkercad.com/things/3WlRqooTBQr)
-•	Weight: 25g
-•	Battery life: same as for Classic
-
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/NeoClassic.png)
-
-**EmaLink Omnipod XS** (PCB: 3.7/3.8, Battery: 250mAh) 
-•	Size: 43x40x16mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/0KXGFfexw8S)
+**EmaLink XS** (PCB: 3.7/3.8/3.9, Battery: 310mAh) 
+•	Size: 42x40x15mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/0KXGFfexw8S)
 •	Weight: 23g
 •	Battery life: 
-  o	 Loop / FreeAPS with Omnipod pod: 3-3.5 days (estimated, to be confirmed)
+  o	 Loop / FreeAPS with Omnipod pod: 4 days
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/XS.png)
 
-**EmaLink Medtronic XXS** (PCB: 3.7/3.8, Battery: 250mAh) 
-•	Size: 43x40x14mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/fs7lsaBEtP7)
-•	Weight: 22g
+**EmaLink 3XS** (PCB: 3.9, Battery: 250mAh) 
+•	Size: 42x40x11mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/fs7lsaBEtP7)
+•	Weight: 21g
 •	Battery life: 
-  o	 Loop / FreeAPS with Medtronic pump: 2.5-3days (confirmed)
-  o	 AndroidAPS with Medtronic pums: 1.5 days (estimated, to be confirmed)
+  o	 Loop / FreeAPS with Omnipod pod: 3-3.5 days
+  o	 Loop / FreeAPS with Medtronic pump: 2.5-3days
+  o	 AndroidAPS with Medtronic pums: 1.5 days
 
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/XXS.png)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/3XS.png)
 
 ### Hardware
 
