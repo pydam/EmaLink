@@ -46,6 +46,7 @@ As of July 2020, the following EmaLink versions are known to exist:
   o	 AndroidAPS with Medtronic pums: 1.5 days
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/3XS.png)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium_XS_3XS.png)
 
 ### Hardware
 
