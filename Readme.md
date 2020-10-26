@@ -7,7 +7,7 @@ A device that bridges the communication between Loop software application and Om
 I have designed a new case to be 3D printed with TPU material. TPU is a flexbile material that cannot be shattered, this makes EmaLink
 drop proof. You will still break it if you step on it ...
 
-As of July 2020, the following EmaLink versions are known to exist:
+As of Oct 2020, the following EmaLink versions are known to exist:
 
 **EmaLink Medtronic Maxx** (PCB: 3.8, Battery 1050mAh)
 •	Size: 55x40x21 mm, oval design [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
