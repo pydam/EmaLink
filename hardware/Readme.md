@@ -6,6 +6,8 @@
  * board_v7.kicad_pcb - pcb design file for PCB versions 3.7(433Mhz)
  * board_v8.kicad_pcb - pcb design file for PCB versions 3.8(868/916Mhz)
  * board_v7.sch - circuit schematic for PCB versions 3.7(433Mhz) and 3.8(868/916Mhz)
+ * board_v9.kicad_pcb - pcb design file for PCB versions 3.9(433/868/916Mhz)
+ * board_v9.sch - circuit schematic for PCB versions 3.9(433/868/916Mhz)
  
 ### PCB Assembly
 
