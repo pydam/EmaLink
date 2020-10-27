@@ -13,8 +13,7 @@ As of Oct 2020, the following EmaLink versions are known to exist:
 •	Size: 55x40x21 mm, oval design [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
 •	Weight: 34g
 •	Battery life: 
-  o	 Loop / FreeAPS with Medtronic pump - 9+ days
-  o	 AndroidAPS with Medtronic pums - 5+ days (estimated, to be confirmed)
+  o	 Loop / FreeAPS / AndroidAPS with Medtronic pump - 9+ days
 •	Not available for Omnipod
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Maxx.png)
@@ -23,7 +22,7 @@ As of Oct 2020, the following EmaLink versions are known to exist:
 •	Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
 •	Weight: 24g
 •	Battery life: 
-  o	 Loop / FreeAPS with Omnipod pod: 7 days
+  o	 Loop / FreeAPS with Omnipod pod: 7-8 days
   o	 Loop / FreeAPS with Medtronic pump: 5-6 days
   o	 AndroidAPS with Medtronic pums: 3 days
 
@@ -34,6 +33,8 @@ As of Oct 2020, the following EmaLink versions are known to exist:
 •	Weight: 23g
 •	Battery life: 
   o	 Loop / FreeAPS with Omnipod pod: 4 days
+  o	 Loop / FreeAPS with Medtronic pump: 3 days
+  o	 AndroidAPS with Medtronic pums: 2 days
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/XS.png)
 
@@ -41,8 +42,8 @@ As of Oct 2020, the following EmaLink versions are known to exist:
 •	Size: 42x40x11mm, square [Tinkercad](https://www.tinkercad.com/things/354TEb6AY1d)
 •	Weight: 21g
 •	Battery life: 
-  o	 Loop / FreeAPS with Omnipod pod: 3-3.5 days
-  o	 Loop / FreeAPS with Medtronic pump: 2.5-3days
+  o	 Loop / FreeAPS with Omnipod pod: 3 days
+  o	 Loop / FreeAPS with Medtronic pump: 2.5 days
   o	 AndroidAPS with Medtronic pums: 1.5 days
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/3XS.png)
