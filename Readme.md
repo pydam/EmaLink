@@ -11,7 +11,7 @@ Charging is considered finished after the red led (the one close to the USB conn
 ### LED Lights
 
 There are 3 leds on the back of the device: a red one, close to the micro USB charing port, and a red + green cluster on the other side. 
-When you switch-on EmaLink, the red + green cluster will blink for 1 second. 
+When you switch-on EmaLink, the red + green cluster will light-up for 1 second. 
 When you connect EmaLink to AAPS on Loop over bluetooth, the green led will start blinking every 1.5 seconds. The green led will stop blinking once battery is almost depleted.
 The red led will start blinking once battery is almost depleted, you should consider charging it in the next few hours.
 
