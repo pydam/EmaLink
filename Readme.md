@@ -33,7 +33,7 @@ As of Oct 2020, the following EmaLink versions are available:
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Maxx.png)
 
-**EmaLink Medium** (PCB: 3.7/3.8/3.9, Battery: 550mAh)
+**EmaLink Standard (former Medium)** (PCB: 3.7/3.8/3.9, Battery: 550mAh)
 *	Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
 *	Weight: 24g
 *	Battery life: 
@@ -45,7 +45,7 @@ As of Oct 2020, the following EmaLink versions are available:
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium.png)
 
-**EmaLink XS** (PCB: 3.7/3.8/3.9, Battery: 310mAh) 
+**(retired)EmaLink XS** (PCB: 3.7/3.8/3.9, Battery: 310mAh) 
 *	Size: 42x40x15mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/bysJBdyaAnK)
 *	Weight: 23g
 *	Battery life: 
@@ -57,7 +57,7 @@ As of Oct 2020, the following EmaLink versions are available:
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/XS.png)
 
-**EmaLink 3XS** (PCB: 3.9, Battery: 250mAh) 
+**EmaLink Micro (former 3XS)** (PCB: 3.9, Battery: 250mAh) 
 *	Size: 42x40x11mm, square [Tinkercad](https://www.tinkercad.com/things/354TEb6AY1d)
 *	Weight: 21g
 *	Battery life: 
