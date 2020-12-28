@@ -58,8 +58,8 @@ As of Oct 2020, the following EmaLink versions are available:
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/XS.png)
 
-**EmaLink Micro (former 3XS)** (PCB: 3.9, Battery: 250mAh) 
-*	Size: 42x40x11mm, square [Tinkercad](https://www.tinkercad.com/things/354TEb6AY1d)
+**EmaLink Micro (former 3XS, with caps)** (PCB: 3.9, Battery: 250mAh) 
+*	Size: 42x40x11mm (without protection caps), 43x41x12mm (with protection caps), square [Tinkercad](https://www.tinkercad.com/things/1iY2ShKmpIi)
 *	Weight: 21g
 *	Battery life: 
     * Loop/FreeAPS with Omnipod pod: 3 days
