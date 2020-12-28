@@ -22,18 +22,19 @@ drop proof. You will still break it if you step on it ...
 
 As of Oct 2020, the following EmaLink versions are available:
 
-**EmaLink Medtronic Maxx** (PCB: 3.8/3.9, Battery 1050mAh)
+**EmaLink Maxx** (PCB: 3.8/3.9/4.0, Battery 1050mAh)
 * Size: 55x40x21 mm, oval design [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
 * Weight: 34g
 * Battery life:
+    *	Loop/FreeAPS with Omnipod pod: 15-16 days
     * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 4 days (due to MySentry feature, EmaLink uses much more power, which impacts the battery life)
     * Loop/FreeAPS with other Medtronic pumps - 9+ days
+    * AndroidAPS with Omnipod pods: 15-16 days
     * AndroidAPS with Medtronic pumps: 9+ days
-    * Not available for Omnipod
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Maxx.png)
 
-**EmaLink Standard (former Medium)** (PCB: 3.7/3.8/3.9, Battery: 550mAh)
+**EmaLink Standard (former Medium)** (PCB: 3.7/3.8/3.9/4.0, Battery: 550mAh)
 *	Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
 *	Weight: 24g
 *	Battery life: 
@@ -67,7 +68,7 @@ As of Oct 2020, the following EmaLink versions are available:
     * AndroidAPS with Omnipod pods: 3 days
     * AndroidAPS with Medtronic pumps: 1.5 days
 
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/3XS.png)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Micro.png)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium_XS_3XS.png)
 
 ### Hardware
