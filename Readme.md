@@ -20,7 +20,7 @@ The red led will start blinking once battery is almost depleted, you should cons
 I have designed a new case to be 3D printed with TPU material. TPU is a flexbile material that cannot be shattered, this makes EmaLink
 drop proof. You will still break it if you step on it ...
 
-As of Oct 2020, the following EmaLink versions are available:
+As of Dec 2020, the following EmaLink versions are available:
 
 **EmaLink Maxx** (PCB: 3.8/3.9/4.0, Battery 1050mAh)
 * Size: 55x40x21 mm, oval design [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
