@@ -76,9 +76,7 @@ As of Oct 2020, the following EmaLink versions are available:
 
 See the [hardware](https://github.com/sks01/emalink/tree/master/hardware) directory for design files to build it. The hardware design is released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).  
 
-![PCB_top_Omnipod](https://github.com/sks01/EmaLink/blob/master/pictures/PCB_top_Omnipod.png)
-![PCB_top_Medtronic](https://github.com/sks01/EmaLink/blob/master/pictures/PCB_top_Medtronic.png)
-![PCB_back](https://github.com/sks01/EmaLink/blob/master/pictures/PCB_back.png)
+![PCB_v4.0](https://github.com/sks01/EmaLink/blob/master/pictures/EL_PCB_v4.0.png)
 
 ### Firmware
 
