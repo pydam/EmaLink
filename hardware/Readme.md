@@ -1,13 +1,8 @@
 # EmaLink Hardware
 
- * board_v4.kicad_pcb - pcb design file for PCB versions 3.2(433Mhz)
- * board_v5.kicad_pcb - pcb design file for PCB versions 3.3(868/916Mhz)
- * board_v4.sch - circuit schematic for PCB versions 3.2(433Mhz) and 3.3(868/916Mhz)
- * board_v7.kicad_pcb - pcb design file for PCB versions 3.7(433Mhz)
- * board_v8.kicad_pcb - pcb design file for PCB versions 3.8(868/916Mhz)
- * board_v7.sch - circuit schematic for PCB versions 3.7(433Mhz) and 3.8(868/916Mhz)
- * board_v9.kicad_pcb - pcb design file for PCB versions 3.9(433/868/916Mhz)
- * board_v9.sch - circuit schematic for PCB versions 3.9(433/868/916Mhz)
+ *  Schematic_EL v4.x.pdf - Schematic for versions 4.1-4.2
+ *  Project_EL v4.1.zip - EasyEDA project for versions 4.1-4.2
+ *  Gerber_EL v4.2 PCB.zip - Gerber files for version 4.2
  
 ### PCB Assembly
 
