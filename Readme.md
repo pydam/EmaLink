@@ -35,7 +35,7 @@ As of Feb 2021, the following EmaLink versions are available:
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Maxx.png)
 
 **EmaLink Standard** (PCB: 3.7/3.8/3.9/4.0, Battery: 550mAh)
-*	Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
+*  Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
 *	Weight: 24g
 *	Battery life: 
     *	Loop/FreeAPS with Omnipod pod: 7-8 days
@@ -47,7 +47,8 @@ As of Feb 2021, the following EmaLink versions are available:
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium.png)
 
 **EmaLink Micro** (PCB: 3.9/4.0, Battery: 250mAh) 
-*	Size: 42x40x11mm (without protection caps), 43x41x12mm (with protection caps), dustproof(with caps on), splash resistant (with caps on), square [Tinkercad](https://www.tinkercad.com/things/1iY2ShKmpIi)
+*	This is the smallest version of EmaLink optimized for use away from your body. If you cary EmaLink with you most time, go for Nano. If you have a mixed usage, try Standard.
+*  Size: 42x40x11mm (without protection caps), 43x41x12mm (with protection caps), dustproof(with caps on), splash resistant (with caps on), square [Tinkercad](https://www.tinkercad.com/things/1iY2ShKmpIi)
 *	Weight: 21g
 *	Battery life: 
     * Loop/FreeAPS with Omnipod pod: 3 days
@@ -57,7 +58,8 @@ As of Feb 2021, the following EmaLink versions are available:
     * AndroidAPS with Medtronic pumps: 1.5 days
     
 **New! EmaLink Nano** (PCB: 5.0, Battery: 250mAh) 
-*	Size: 41x31x12mm dustproof, splash resistant
+*	This is the smallest version of EmaLink, specially made to be used as a necklace. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Standard or Micro.
+*  Size: 41x31x12mm dustproof, splash resistant
 *	Weight: 18g
 *	Battery life: 
     * Loop/FreeAPS with Omnipod pod: 3 days
