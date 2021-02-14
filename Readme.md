@@ -20,7 +20,7 @@ The red led will start blinking once battery is almost depleted, you should cons
 I have designed a new case to be 3D printed with TPU material. TPU is a flexbile material that cannot be shattered, this makes EmaLink
 drop proof. You will still break it if you step on it ...
 
-As of Dec 2020, the following EmaLink versions are available:
+As of Feb 2021, the following EmaLink versions are available:
 
 **EmaLink Maxx** (PCB: 3.8/3.9/4.0, Battery 1050mAh)
 * Size: 55x40x21 mm, oval design [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
@@ -34,7 +34,7 @@ As of Dec 2020, the following EmaLink versions are available:
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Maxx.png)
 
-**EmaLink Standard (former Medium)** (PCB: 3.7/3.8/3.9/4.0, Battery: 550mAh)
+**EmaLink Standard** (PCB: 3.7/3.8/3.9/4.0, Battery: 550mAh)
 *	Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
 *	Weight: 24g
 *	Battery life: 
@@ -46,7 +46,7 @@ As of Dec 2020, the following EmaLink versions are available:
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium.png)
 
-**EmaLink Micro (former 3XS, with caps)** (PCB: 3.9/4.0, Battery: 250mAh) 
+**EmaLink Micro** (PCB: 3.9/4.0, Battery: 250mAh) 
 *	Size: 42x40x11mm (without protection caps), 43x41x12mm (with protection caps), dustproof(with caps on), splash resistant (with caps on), square [Tinkercad](https://www.tinkercad.com/things/1iY2ShKmpIi)
 *	Weight: 21g
 *	Battery life: 
@@ -55,8 +55,18 @@ As of Dec 2020, the following EmaLink versions are available:
     * Loop/FreeAPS with other Medtronic pumps: 2-2.5 days
     * AndroidAPS with Omnipod pods: 3 days
     * AndroidAPS with Medtronic pumps: 1.5 days
+    
+**New! EmaLink Nano** (PCB: 5.0, Battery: 250mAh) 
+*	Size: 41x31x12mm dustproof, splash resistant
+*	Weight: 18g
+*	Battery life: 
+    * Loop/FreeAPS with Omnipod pod: 3 days
+    * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 16-18 hours (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 1.5-2 days
+    * Loop/FreeAPS with other Medtronic pumps: 2-2.5 days
+    * AndroidAPS with Omnipod pods: 3 days
+    * AndroidAPS with Medtronic pumps: 1.5 days
 
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Micro.png)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Nano.png)
 ![versions](https://github.com/sks01/EmaLink/blob/master/pictures/EmaLink_versions_1.png)
 ![Versions](https://github.com/sks01/EmaLink/blob/master/pictures/EmaLink_versions_2.png)
 
