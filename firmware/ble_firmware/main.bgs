@@ -44,6 +44,10 @@
 	#added 250mAh HSZ battery 
 	#reports battery voltage through a new custom characteristic (convert nex to decimal and divide with 100 to see bat voltage)
 	#battery voltage is read only each 3.45 seconds, not also when the user reads the characteristic
+#v3.11
+	#test BLE to CC communication at start-up and blink red led if it fails
+	#added mapping table for 502530 battery
+	#improved mapping table for Maxx battery
 
 #todo
 
@@ -107,9 +111,9 @@
 #const red_blink2 = 		8
 
 #look-up table for 1050mAh 103035 Cellevia battery
-#const bat_voltage_LSB()="\x15\x2B\xF3\x09\x1F\xE7\xFD\x13\x29\x8C\xA2\x06\xB8\x1C\xCE\x80\x32\xE4\x48\xFA\xAC\x5E\x10\x74\xD8\xEE\x94\x00"
-#const bat_voltage_MSB()="\x7F\x7E\x7C\x7C\x7B\x79\x78\x78\x77\x76\x75\x75\x74\x74\x73\x73\x73\x72\x72\x71\x71\x71\x71\x70\x6F\x6E\x6B\x00"
-#const bat_charge()=		"\x64\x60\x5C\x58\x54\x50\x4C\x48\x44\x40\x3D\x39\x36\x32\x2F\x2B\x28\x24\x21\x1D\x1A\x16\x13\x10\x09\x06\x03\x00"
+#const bat_voltage_LSB()="\x15\x79\x2B\xDD\x41\xF3\x57\x09\xBB\x1F\x83\xE7\x99\x4B\xAF\x61\x13\x77\x29\xDB\x3E\xF0\xA2\x06\xB8\x6A\xCE\x80\x32\x96\x48\xFA\x5E\x10\x74\x26\x3C\xA0\x68\x94\xC0\x50\x6F\xF3"
+#const bat_voltage_MSB()="\x7F\x7E\x7E\x7D\x7D\x7C\x7C\x7C\x7B\x7B\x7A\x79\x79\x79\x78\x78\x78\x77\x77\x76\x76\x75\x75\x75\x74\x74\x73\x73\x73\x72\x72\x71\x71\x71\x70\x70\x6F\x6E\x6D\x6B\x69\x67\x62\x3C"
+#const bat_charge()=		"\x64\x62\x61\x5F\x5E\x5C\x5A\x59\x56\x55\x53\x51\x50\x4E\x4C\x4A\x49\x47\x45\x43\x41\x3F\x3C\x39\x35\x33\x2E\x29\x26\x22\x1E\x19\x15\x12\x0F\x0B\x07\x06\x05\x04\x03\x02\x01\x00"
 #const red_blink1 = 		6
 #const red_blink2 = 		3
 
@@ -120,6 +124,13 @@
 #const red_blink1 = 		7
 #const red_blink2 = 		3
 
+#look-up table for 370mAh 502530 Hexunbaba battery
+#const bat_voltage_LSB()="\x2B\x09\x6D\xD1\x83\x35\xE7\x4B\xAF\xC5\x29\x8C\x3E\xF0\xA2\x54\x06\xB8\x6A\xCE\x32\x96\xAC\xC2\x3C\x04\x1A\xE2\xC0\x18\xF3"
+#const bat_voltage_MSB()="\x7E\x7C\x7B\x7A\x7A\x7A\x79\x79\x78\x77\x77\x76\x76\x75\x75\x75\x75\x74\x74\x73\x73\x72\x71\x70\x6F\x6E\x6D\x6B\x69\x66\x3C"
+#const bat_charge()=     "\x64\x61\x5E\x52\x4C\x49\x46\x43\x40\x3E\x3B\x38\x35\x2D\x2A\x28\x25\x22\x1D\x1A\x18\x15\x12\x10\x0D\x0B\x09\x06\x04\x02\x00"
+#const red_blink1 = 		16
+#const red_blink2 = 		6
+
 #look-up table for 250mAh 502030 HSZ battery
 const bat_voltage_LSB()="\xDD\xA5\x1F\xE7\xAF\xC5\xDB\xF0\x54\x6A\x80\x96\xFA\x5E\x74\xD8\x8A\x3C\xEE\x52\x04\xB6\x68\xCC\x7E\x30\x94\xAA\x0E\xC0\xD6\x3A\x18\xF3"
 const bat_voltage_MSB()="\x7D\x7C\x7B\x79\x78\x77\x76\x75\x75\x74\x73\x72\x71\x71\x70\x6F\x6F\x6F\x6E\x6E\x6E\x6D\x6D\x6C\x6C\x6C\x6B\x6A\x6A\x69\x68\x68\x66\x3C"
@@ -127,8 +138,15 @@ const bat_charge()=     "\x64\x60\x5D\x59\x56\x53\x4F\x4C\x49\x46\x42\x3F\x3C\x3
 const red_blink1 = 		18
 const red_blink2 = 		7
 
+#look-up table for 250mAh 502030 Cellevia battery
+#const bat_voltage_LSB()="\x79\x8F\x57\x1F\x35\x4B\x13\x29\x3E\x54\xB8\xCE\x32\xFA\x5E\xC2\x26\x8A\x3C\xA0\x52\x04\x68\x1A\x7E\x30\x94\xF8\x0E\xC0\x24\x50\xF5\xF3"
+#const bat_voltage_MSB()="\x7E\x7D\x7C\x7B\x7A\x79\x78\x77\x76\x75\x74\x73\x73\x71\x71\x70\x70\x6F\x6F\x6E\x6E\x6E\x6D\x6D\x6C\x6C\x6B\x6A\x6A\x69\x69\x67\x63\x3C"
+#const bat_charge()=		"\x64\x60\x5D\x59\x55\x52\x4F\x4B\x48\x45\x41\x3E\x3B\x38\x35\x32\x2F\x2C\x29\x23\x20\x1E\x1B\x18\x15\x12\x10\x0D\x0A\x08\x05\x02\x00\x00"
+#const red_blink1 = 		18
+#const red_blink2 = 		8
+
 #use this to adjust such that capacity reporting is in line with the battery voltage. Test at ~3.8v
-const voltage_adj = 998
+const voltage_adj = 1006
 
 dim tmp(2)
 dim spi_in_buf(255)
@@ -165,12 +183,107 @@ dim num_iterations
 dim comm_in_progress
 dim debug
 
-#store battery measurement results
-dim tmp1
-dim tmp2
-dim bat_idx #index in the mapping table
-dim batresult #battery charge percentage
-dim batvolt(2) #battery voltage as decimal coded hex
+#battery measurement variables
+dim tmp1		#temp variable to reduce recalculations
+dim tmp2		#temp variable to reduce recalculations
+dim bat_idx 	#index in the mapping table
+dim batresult 	#battery charge percentage
+dim batvolt(2) 	#battery voltage
+
+procedure test_CC()
+
+	#send set encoding to Manchester to CC
+	spi_out_buf(1:1) = 11	#set encoding
+	spi_out_buf(2:1) = 1	#to Manchester
+	spi_out_buf_len = 2		#2 bytes to send 
+  
+	call hardware_io_port_write(0, $10, 0) #activeaza SPI_SS
+
+	tmp(0:1) = $99
+	tmp(1:1) = spi_out_buf_len
+	
+	#comunica cat de mult are de transmis si afla cat de mult are de receptionat
+	call hardware_spi_transfer(0,1,tmp(0:1))(result,channel,tlen,tmp(0:1)) 
+	call hardware_spi_transfer(0,1,tmp(1:2))(result,channel,tlen,tmp(1:2)) 
+	slave_bytes_avail = tmp(1:1)
+	
+	#foloseste cea mai mare lungime dintre datele de trimis si cele de primit
+	spi_xfer_size = slave_bytes_avail
+	if spi_out_buf_len > spi_xfer_size then
+		spi_xfer_size = spi_out_buf_len
+	end if
+
+	spi_batch_size = spi_xfer_size
+	 spi_batch_offset = 0
+
+	#transmite tot ce are de transmis sau mai mult in cazul in care are mai multe de receptionat, in pachete de 10 bytes
+	while spi_batch_size > 0 
+		call hardware_spi_transfer(0,spi_batch_size,spi_out_buf(spi_batch_offset+1:spi_batch_size))(result,channel,tlen,spi_in_buf(spi_batch_offset:spi_batch_size))
+		spi_batch_offset = spi_batch_offset + spi_batch_size
+		spi_batch_size = spi_xfer_size - spi_batch_offset
+	end while
+
+	call hardware_io_port_write(0, $10, $10) #dezactiveaza SPI_SS
+ 
+	#read the answer from CC
+
+	spi_out_buf_len = 0
+
+	num_iterations = 3
+	while num_iterations > 0 && slave_bytes_avail = 0
+		num_iterations = num_iterations - 1
+  
+		call hardware_io_port_write(0, $10, 0) #activeaza SPI_SS
+
+		tmp(0:1) = $99
+		tmp(1:1) = spi_out_buf_len
+		
+		#comunica cat de mult are de transmis si afla cat de mult are de receptionat
+		call hardware_spi_transfer(0,1,tmp(0:1))(result,channel,tlen,tmp(0:1)) 
+		call hardware_spi_transfer(0,1,tmp(1:2))(result,channel,tlen,tmp(1:2)) 
+		slave_bytes_avail = tmp(1:1)
+		
+		#foloseste cea mai mare lungime dintre datele de trimis si cele de primit
+		spi_xfer_size = slave_bytes_avail
+		if spi_out_buf_len > spi_xfer_size then
+			spi_xfer_size = spi_out_buf_len
+		end if
+
+		spi_batch_size = spi_xfer_size
+		spi_batch_offset = 0
+
+		#transmite tot ce are de transmis sau mai mult in cazul in care are mai multe de receptionat, in pachete de 10 bytes
+		while spi_batch_size > 0 
+			call hardware_spi_transfer(0,spi_batch_size,spi_out_buf(spi_batch_offset+1:spi_batch_size))(result,channel,tlen,spi_in_buf(spi_batch_offset:spi_batch_size))
+			spi_batch_offset = spi_batch_offset + spi_batch_size
+			spi_batch_size = spi_xfer_size - spi_batch_offset
+		end while
+
+		call hardware_io_port_write(0, $10, $10) #dezactiveaza SPI_SS
+	end while
+	
+	#ups, the CC did not respond as expected, enter an infinite loop of red flashes
+	if slave_bytes_avail != 1 || spi_in_buf(0:1) != $DD 
+		while 1
+			call hardware_io_port_write(0, $3, 1) #Turn P0_1 (red led) on
+			#wait 0.1s
+			num_iterations = 200
+			while num_iterations > 0
+				num_iterations = num_iterations - 1
+			end while
+			call hardware_io_port_write(0, $3, 3) #Turn P0_1 (red led) off
+			#wait 0.1s
+			num_iterations = 200
+			while num_iterations > 0
+				num_iterations = num_iterations - 1
+			end while
+		end while
+	end if
+	
+	memset(spi_out_buf(0), $11, spi_out_buf_len) #curatam buferul de iesire SPI, am transmis ce era in el
+	spi_out_buf_len = 0
+
+end
 
 event system_boot(major,minor,patch,build,ll_version,protocol,hw)
 	name_len=0
@@ -199,8 +312,8 @@ event system_boot(major,minor,patch,build,ll_version,protocol,hw)
 
 	call hardware_io_port_config_direction(0, $13) #Make P0_0 (green led), P0_1 (red led), P0_4 (SPI_SS) as outputs
 	
-	call hardware_io_port_write(0, $10, 1) #disable SPI_SS
-	
+	call hardware_io_port_write(0, $10, $10) #disable SPI_SS
+		
 	call hardware_io_port_write(0, $3, 0) #Turn P0_0 (green led), P0_1 (red led) off
 	#wait 2s
 	num_iterations = 4240
@@ -208,6 +321,8 @@ event system_boot(major,minor,patch,build,ll_version,protocol,hw)
 		num_iterations = num_iterations - 1
 	end while
 	call hardware_io_port_write(0, $3, 3) #Turn P0_0 (green led), P0_1 (red led) off
+	
+	call test_CC() #send a command to CC and make sure it asnwer as expected
 	
 	#call hardware_io_port_config_direction(1, $03) #Make P1_0 (buzz1), P1_1 (buzz2)
 	
@@ -218,6 +333,9 @@ event system_boot(major,minor,patch,build,ll_version,protocol,hw)
 	
 	call hardware_set_soft_timer($666, 1, 0) #Start ~50ms timer
 end
+
+
+
 
 procedure do_spi()
   if in_spi = 1 then	#apelat de un event in timp ce procesa deja
