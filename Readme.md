@@ -27,22 +27,32 @@ As of Feb 2021, the following EmaLink versions are available:
 * Weight: 34g
 * Battery life:
     *	Loop/FreeAPS with Omnipod pod: 15-16 days
-    * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 4 days (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 7+ days
-    * Loop/FreeAPS with other Medtronic pumps - 9+ days
+    * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 4 days (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 11-12 days
+    * Loop/FreeAPS with other Medtronic pumps - 11-12 days
     * AndroidAPS with Omnipod pods: 15-16 days
-    * AndroidAPS with Medtronic pumps: 9+ days
+    * AndroidAPS with Medtronic pumps: 9-10 days
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Maxx.png)
+
+**EmaLink Large** (PCB: 4.0, Battery 850mAh)
+* Size: 54x40x17 mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
+* Weight: 30g
+* Battery life:
+    *	Loop/FreeAPS with Omnipod pod: 12-13 days
+    * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 3.5 days (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 10-11 days
+    * Loop/FreeAPS with other Medtronic pumps - 10-11 days
+    * AndroidAPS with Omnipod pods: 12-13 days
+    * AndroidAPS with Medtronic pumps: 7-8 days
 
 **EmaLink Standard** (PCB: 3.7/3.8/3.9/4.0, Battery: 550mAh)
 *  Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
 *	Weight: 24g
 *	Battery life: 
     *	Loop/FreeAPS with Omnipod pod: 7-8 days
-    *	Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 2 days (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 3-4 days
+    *	Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 2 days (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 4-5 days
     *	Loop/FreeAPS with other Medtronic pumps: 4-5 days
     * AndroidAPS with Omnipod pods: 7-8 days
-    *	AndroidAPS with Medtronic pumps: 3 days
+    *	AndroidAPS with Medtronic pumps: 3-4 days
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium.png)
 
@@ -54,7 +64,7 @@ As of Feb 2021, the following EmaLink versions are available:
     * Loop/FreeAPS with Omnipod pod: 3 days
     * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 16-18 hours (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 1.5-2 days
     * Loop/FreeAPS with other Medtronic pumps: 2-2.5 days
-    * AndroidAPS with Omnipod pods: 3 days
+    * AndroidAPS with Omnipod pods: 3-3.5 days
     * AndroidAPS with Medtronic pumps: 1.5 days
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Micro.png)
     
@@ -66,7 +76,7 @@ As of Feb 2021, the following EmaLink versions are available:
     * Loop/FreeAPS with Omnipod pod: 3 days
     * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 16-18 hours (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 1.5-2 days
     * Loop/FreeAPS with other Medtronic pumps: 2-2.5 days
-    * AndroidAPS with Omnipod pods: 3 days
+    * AndroidAPS with Omnipod pods: 3-3.5 days
     * AndroidAPS with Medtronic pumps: 1.5 days
 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Nano.png)
