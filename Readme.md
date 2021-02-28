@@ -59,7 +59,7 @@ As of Feb 2021, the following EmaLink versions are available:
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Micro.png)
     
 **New! EmaLink Nano** (PCB: 5.0, Battery: 250mAh) 
-*	This is the smallest version of EmaLink, specially made to be used as a necklace. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Standard or Micro.
+*	This is the smallest version of EmaLink, specially made to be used as a necklace. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/bE5cdci4nX8)
 *  Size: 41x31x12mm dustproof, splash resistant
 *	Weight: 18g
 *	Battery life: 
