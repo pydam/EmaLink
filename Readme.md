@@ -35,7 +35,7 @@ As of Feb 2021, the following EmaLink versions are available:
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Maxx.png)
 
 **EmaLink Large** (PCB: 4.0, Battery 850mAh)
-* Size: 54x40x17 mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
+* Size: 54x40x17 mm, square with 2 caps, dustproof, splash resistant
 * Weight: 30g
 * Battery life:
     *	Loop/FreeAPS with Omnipod pod: 12-13 days
