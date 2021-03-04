@@ -18,9 +18,16 @@ The red led will start blinking once battery is almost depleted, you should cons
 ### Case
 
 I have designed a new case to be 3D printed with TPU material. TPU is a flexbile material that cannot be shattered, this makes EmaLink
-drop proof. You will still break it if you step on it ...
+drop proof. There are several case styles to chose from, pick the one that makes most sense for your needs.
 
-As of Feb 2021, the following EmaLink versions are available:
+Chosing the right case:
+* "I keep EmaLink with me most time, the smaller - the better" - Nano is the way to go
+* "Having the best range while keeping a small size is important to me" - Micro is the perfect fit
+* "Give me a product that has great range, can be charged once per week and can survive through drops and splashes" - Standard fits the bill
+* "A big battery is nice, but can I have it splashproof also?" - Large is the best for you
+* "I keep forgeting to charge devices, can I have the biggest battery?" - Go for Maxx 
+
+As of Mar 2021, the following EmaLink versions are available:
 
 **EmaLink Maxx** (PCB: 3.8/3.9/4.0, Battery 1050mAh)
 * Size: 55x40x21 mm, oval design [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
@@ -43,6 +50,8 @@ As of Feb 2021, the following EmaLink versions are available:
     * Loop/FreeAPS with other Medtronic pumps - 10-11 days
     * AndroidAPS with Omnipod pods: 12-13 days
     * AndroidAPS with Medtronic pumps: 7-8 days
+
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Large.png)
 
 **EmaLink Standard** (PCB: 3.7/3.8/3.9/4.0, Battery: 550mAh)
 *  Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
