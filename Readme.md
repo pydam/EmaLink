@@ -5,8 +5,7 @@ A device that bridges the communication between Loop software application and Om
 ### Charging
 
 You can use any micro USB charges from a phone, tablet, headset or other devices. You can even use a powerbank to charge it if it has a micro USB cable. 
-Charging is considered finished after the red led (the one close to the USB connector) is turning off. It may take up to 3 hours for 3XS/Micro or XS to fully charge, up to 5 hours for Standard/Medium and Maxx.
-
+Charging is considered finished after the red led (the one close to the USB connector) is turning off. It may take up to 3 hours for Nano or Micro to fully charge, up to 5 hours for Standard, Large and Maxx.
 
 ### LED Lights
 
