@@ -30,6 +30,7 @@ Chosing the right case:
 As of Mar 2021, the following EmaLink versions are available:
 
 **EmaLink Maxx** (PCB: 3.8/3.9/4.x, Battery 1050mAh)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Maxx.png)
 * Size: 55x40x21 mm, oval design [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
 * Weight: 38g
 * Battery life:
@@ -39,9 +40,8 @@ As of Mar 2021, the following EmaLink versions are available:
     * AndroidAPS with Omnipod pods: 15-16 days
     * AndroidAPS with Medtronic pumps: 9-10 days
 
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Maxx.png)
-
 **EmaLink Large** (PCB: 4.x, Battery 850mAh)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Large.png)
 * Size: 54x40x17 mm, square with 2 caps, dustproof, splash resistant
 * Weight: 40g
 * Battery life:
@@ -51,9 +51,8 @@ As of Mar 2021, the following EmaLink versions are available:
     * AndroidAPS with Omnipod pods: 12-13 days
     * AndroidAPS with Medtronic pumps: 7-8 days
 
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Large.png)
-
 **EmaLink Standard** (PCB: 3.7/3.8/3.9/4.x, Battery: 550mAh)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium.png)
 *  Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
 *	Weight: 24g
 *	Battery life: 
@@ -63,9 +62,8 @@ As of Mar 2021, the following EmaLink versions are available:
     * AndroidAPS with Omnipod pods: 7-8 days
     *	AndroidAPS with Medtronic pumps: 3-4 days
 
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium.png)
-
 **EmaLink Micro** (PCB: 3.9/4.x, Battery: 250mAh) 
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Micro.png)
 *	This is the smallest version of EmaLink optimized for use away from your body. If you cary EmaLink with you most time, go for Nano. If you have a mixed usage, try Standard.
 *  Size: 42x40x11mm (without protection caps), 43x41x12mm (with protection caps), dustproof(with caps on), splash resistant (with caps on), square [Tinkercad](https://www.tinkercad.com/things/1iY2ShKmpIi)
 *	Weight: 20g
@@ -75,9 +73,9 @@ As of Mar 2021, the following EmaLink versions are available:
     * Loop/FreeAPS with other Medtronic pumps: 2-2.5 days
     * AndroidAPS with Omnipod pods: 3-3.5 days
     * AndroidAPS with Medtronic pumps: 1.5 days
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Micro.png)
     
-**New! EmaLink Nano** (PCB: 5.x, Battery: 250mAh) 
+**New! EmaLink Nano** (PCB: 5.x, Battery: 250mAh)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Nano.png)
 *	This is the smallest version of EmaLink, specially made to be used as a necklace. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/bE5cdci4nX8)
 *  Size: 41x31x12mm dustproof, splash resistant
 *	Weight: 18g
@@ -88,7 +86,6 @@ As of Mar 2021, the following EmaLink versions are available:
     * AndroidAPS with Omnipod pods: 3-3.5 days
     * AndroidAPS with Medtronic pumps: 1.5 days
 
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Nano.png)
 ![versions](https://github.com/sks01/EmaLink/blob/master/pictures/Compare1.png)
 ![versions](https://github.com/sks01/EmaLink/blob/master/pictures/Compare2.png)
 ![versions](https://github.com/sks01/EmaLink/blob/master/pictures/Compare3.png)
