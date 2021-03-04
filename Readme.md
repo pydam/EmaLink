@@ -24,7 +24,7 @@ As of Feb 2021, the following EmaLink versions are available:
 
 **EmaLink Maxx** (PCB: 3.8/3.9/4.0, Battery 1050mAh)
 * Size: 55x40x21 mm, oval design [Tinkercad](https://www.tinkercad.com/things/aMPzEObGEE7)
-* Weight: 34g
+* Weight: 38g
 * Battery life:
     *	Loop/FreeAPS with Omnipod pod: 15-16 days
     * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 4 days (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 11-12 days
@@ -36,7 +36,7 @@ As of Feb 2021, the following EmaLink versions are available:
 
 **EmaLink Large** (PCB: 4.0, Battery 850mAh)
 * Size: 54x40x17 mm, square with 2 caps, dustproof, splash resistant
-* Weight: 30g
+* Weight: 40g
 * Battery life:
     *	Loop/FreeAPS with Omnipod pod: 12-13 days
     * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 3.5 days (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 10-11 days
@@ -59,7 +59,7 @@ As of Feb 2021, the following EmaLink versions are available:
 **EmaLink Micro** (PCB: 3.9/4.0, Battery: 250mAh) 
 *	This is the smallest version of EmaLink optimized for use away from your body. If you cary EmaLink with you most time, go for Nano. If you have a mixed usage, try Standard.
 *  Size: 42x40x11mm (without protection caps), 43x41x12mm (with protection caps), dustproof(with caps on), splash resistant (with caps on), square [Tinkercad](https://www.tinkercad.com/things/1iY2ShKmpIi)
-*	Weight: 21g
+*	Weight: 20g
 *	Battery life: 
     * Loop/FreeAPS with Omnipod pod: 3 days
     * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 16-18 hours (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 1.5-2 days
