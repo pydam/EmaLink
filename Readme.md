@@ -51,7 +51,7 @@ As of Mar 2021, the following EmaLink versions are available:
     * AndroidAPS with Omnipod pods: 12-13 days
     * AndroidAPS with Medtronic pumps: 7-8 days
 
-**EmaLink Standard** (PCB: 3.7/3.8/3.9/4.x, Battery: 550mAh)
+**EmaLink Standard** (PCB: 3.7/3.8/3.9/4.x, Battery: 500mAh)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium.png)
 *  Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
 *	Weight: 24g
