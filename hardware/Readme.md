@@ -1,5 +1,6 @@
 # EmaLink Hardware
 
+ *  Project_EL v4.3_2021-04-12_19-27-16.zip - EasyEDA project for version 4.3
  *  Schematic_EL v4.x.pdf - Schematic for versions 4.1-4.2
  *  Project_EL v4.1.zip - EasyEDA project for versions 4.1-4.2
  *  Gerber_EL v4.2 PCB.zip - Gerber files for version 4.2
