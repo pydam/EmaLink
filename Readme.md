@@ -52,7 +52,7 @@ As of Mar 2021, the following EmaLink versions are available:
 **EmaLink Micro** (PCB: 4.x, Battery: 250mAh) 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Micro.png)
 *	This is the smallest version of EmaLink optimized for use away from your body. If you cary EmaLink with you most time, go for Nano. If you have a mixed usage, try Standard.
-*  Size: 42x40x11mm (without protection caps), 43x41x12mm (with protection caps), dustproof(with caps on), splash resistant (with caps on), square [Tinkercad](https://www.tinkercad.com/things/1iY2ShKmpIi)
+*  Size: 43x41x12mm, dustproof, splash resistant, square [Tinkercad](https://www.tinkercad.com/things/kaO3JdWCOXo)
 *	Weight: 20g
 *	Battery life: 
     * Loop/FreeAPS with Omnipod pod: 7 days
