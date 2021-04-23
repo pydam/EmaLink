@@ -25,7 +25,7 @@ Chosing the right case:
 * "Give me a product that has great range, can be charged once per week and can survive through drops and splashes" - Standard fits the bill
 * "I keep forgeting to charge devices, can I have the biggest battery?" - Go for Maxx 
 
-As of Mar 2021, the following EmaLink versions are available:
+As of Apr 2021, the following EmaLink versions are available:
 
 **Now thinner and splash-proof! EmaLink Maxx** (PCB: 4.x, Battery 850mAh)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/NewMaxx.png)
