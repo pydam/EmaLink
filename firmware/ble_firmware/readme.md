@@ -1,4 +1,4 @@
-*  BLE firmware version 3.13 version works only with CC1110 2.2.21 firmware
+*  BLE firmware version 3.13 version works only with CC1110 2.2.21 firmware. Also, PCB version v4.0 or above is needed fo these firmware versions.
 *  BLE firmware version 3.11 version works only with CC1110 2.2.19 firmware
 
 The BLE firmware needs to be be unpacked and adjusted to offer best battery charge indication.
