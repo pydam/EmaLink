@@ -35,7 +35,7 @@ As of Apr 2021, the following EmaLink versions are available:
     *	Loop/FreeAPS with Omnipod pod: 30 days
     * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 4 days (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 18 days
     * Loop/FreeAPS with other Medtronic pumps - 18 days
-    * AndroidAPS with Omnipod pods: 18 days
+    * AndroidAPS with Omnipod pods: 30 days
     * AndroidAPS with Medtronic pumps: 14 days
 
 **EmaLink Standard** (PCB: 4.x, Battery: 500mAh)
