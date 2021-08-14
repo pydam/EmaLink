@@ -43,10 +43,10 @@ As of Apr 2021, the following EmaLink versions are available:
 *  Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
 *	Weight: 24g
 *	Battery life: 
-    *	Loop/FreeAPS with Omnipod pod: 17 days
+    *	Loop/FreeAPS with Omnipod pod: 15 days
     *	Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 2 days (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 10 days
     *	Loop/FreeAPS with other Medtronic pumps: 10 days
-    * AndroidAPS with Omnipod pods: 17 days
+    * AndroidAPS with Omnipod pods: 15 days
     *	AndroidAPS with Medtronic pumps: 7 days
 
 **EmaLink Micro** (PCB: 4.x, Battery: 250mAh) 
