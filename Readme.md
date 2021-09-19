@@ -19,7 +19,8 @@ The red led will start blinking once battery is almost depleted, you should cons
 I have designed a new case to be 3D printed with TPU material. TPU is a flexbile material that cannot be shattered, this makes EmaLink
 drop proof. There are several case styles to chose from, pick the one that makes most sense for your needs.
 
-Chosing the right case:
+Chosing the right version:
+* "I would like to keep EmaLink on my bracelet" - Pico is the right choice
 * "I keep EmaLink with me most time, the smaller - the better" - Nano is the way to go
 * "Having the best range while keeping a small size is important to me" - Micro is the perfect fit
 * "Give me a product that has great range, can be charged once per week and can survive through drops and splashes" - Standard fits the bill
@@ -27,8 +28,9 @@ Chosing the right case:
 
 As of Apr 2021, the following EmaLink versions are available:
 
-**Now thinner and splash-proof! EmaLink Maxx** (PCB: 4.x, Battery 850mAh)
+**EmaLink Maxx** (PCB: 4.x, Battery 850mAh)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/NewMaxx.png)
+* Communication range to Omnipod: 55ft / 17meters
 * Size: 55x40x17 mm, oval design with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/2sOWkvGTfb7)
 * Weight: 38g
 * Battery life:
@@ -40,6 +42,7 @@ As of Apr 2021, the following EmaLink versions are available:
 
 **EmaLink Standard** (PCB: 4.x, Battery: 500mAh)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium.png)
+*  Communication range to Omnipod: 60ft / 18meters
 *  Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
 *	Weight: 24g
 *	Battery life: 
@@ -52,6 +55,7 @@ As of Apr 2021, the following EmaLink versions are available:
 **EmaLink Micro** (PCB: 4.x, Battery: 250mAh) 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Micro.png)
 *	This is the smallest version of EmaLink optimized for use away from your body. If you cary EmaLink with you most time, go for Nano. If you have a mixed usage, try Standard.
+*  Communication range to Omnipod: 55ft / 17meters
 *  Size: 43x41x12mm, dustproof, splash resistant, square [Tinkercad](https://www.tinkercad.com/things/kaO3JdWCOXo)
 *	Weight: 20g
 *	Battery life: 
@@ -62,8 +66,8 @@ As of Apr 2021, the following EmaLink versions are available:
     * AndroidAPS with Medtronic pumps: 3 days
     
 **EmaLink Nano** (PCB: 5.x, Battery: 250mAh)
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Nano.png)
-*	This is the smallest version of EmaLink, specially made to be used as a necklace. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/bE5cdci4nX8)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Pico.png)
+*	This is a smallest version of EmaLink that ofers a weekly charging cycle. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/bE5cdci4nX8)
 *  Size: 41x31x12mm dustproof, splash resistant
 *	Weight: 18g
 *	Battery life: 
@@ -72,6 +76,16 @@ As of Apr 2021, the following EmaLink versions are available:
     * Loop/FreeAPS with other Medtronic pumps: 5 days
     * AndroidAPS with Omnipod pods: 7 days
     * AndroidAPS with Medtronic pumps: 3 days
+
+**EmaLink Pico** (PCB: 6.x, Battery: 100mAh)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Nano.png)
+*	This is the smallest version of EmaLink, made to be used on a smartwatch bracelet or as a necklace. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Maxx, Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/bE5cdci4nX8)
+*  Size: 41x29x12mm dustproof, splash resistant
+*	Weight: 12g
+*	Battery life: 
+    * Loop/FreeAPS/AndroidAPS with Omnipod pod:  2.5 days
+    * Loop/FreeAPS with Medtronic pumps: 20-24 hours (make sure you disable MySentry, this will improve communication and batery life)
+    * AndroidAPS with Medtronic pumps: not recommended, battery life is too short
 
 ![versions](https://github.com/sks01/EmaLink/blob/master/pictures/Compare1.png)
 ![versions](https://github.com/sks01/EmaLink/blob/master/pictures/Compare2.png)
@@ -90,6 +104,8 @@ The code in the [firmware](https://github.com/sks01/emalink/tree/master/firmware
 Check the "EmaLink 3_7 3_8 - firmware update guide.docx" if you would like to understand how you can update the firmware for EmaLink with PCB version 3.7, 3.8 or 3.9.
 
 Check the "EmaLink 3_2 3_3 - firmware update guide.docx" if you would like to understand how you can update the firmware for EmaLink with PCB version 3.2 or 3.3. You can use breadboard wires also but you may need to keep them at an angle while flashing as the PCB holes are slightly bigger.
+
+Check the "EmaLink%204_4%20-%20firmware%20update%20guide.pdf" if you would like to understand how you can update the firmware for EmaLink with PCB version 4.x. 
 
 ### License
 
