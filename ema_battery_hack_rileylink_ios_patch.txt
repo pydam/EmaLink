@@ -1,0 +1,71 @@
+diff --git a/RileyLinkBLEKit/RileyLinkDevice.swift b/RileyLinkBLEKit/RileyLinkDevice.swift
+index 412404d..d01bb68 100644
+--- a/RileyLinkBLEKit/RileyLinkDevice.swift
++++ b/RileyLinkBLEKit/RileyLinkDevice.swift
+@@ -14,7 +14,10 @@ public enum RileyLinkHardwareType {
+     case ema
+     
+     var monitorsBattery: Bool {
+-        return self == .orange
++        if self == .riley {
++            return false
++        }
++        return true
+     }
+ }
+ 
+@@ -91,6 +94,9 @@ public class RileyLinkDevice {
+         
+         if services.itemWithUUID(RileyLinkServiceUUID.secureDFU.cbUUID) != nil {
+             return .orange
++        } else if services.itemWithUUID(RileyLinkServiceUUID.battery.cbUUID) != nil {
++            // this returns true for riley with ema firmware, need a different check
++            return .ema
+         } else {
+             return .riley
+         }
+diff --git a/RileyLinkKitUI/RileyLinkDeviceTableViewController.swift b/RileyLinkKitUI/RileyLinkDeviceTableViewController.swift
+index 9fae599..c082249 100644
+--- a/RileyLinkKitUI/RileyLinkDeviceTableViewController.swift
++++ b/RileyLinkKitUI/RileyLinkDeviceTableViewController.swift
+@@ -137,7 +137,7 @@ public class RileyLinkDeviceTableViewController: UITableViewController {
+         title = device.name
+         
+         switch device.hardwareType {
+-        case .riley, .ema, .none:
++        case .riley, .none:
+             deviceRows = [
+                 .customName,
+                 .version,
+@@ -147,6 +147,21 @@ public class RileyLinkDeviceTableViewController: UITableViewController {
+                 .frequency
+             ]
+             
++            sections = [
++                .device,
++                .rileyLinkCommands
++            ]
++        case .ema:
++            deviceRows = [
++                .customName,
++                .version,
++                .rssi,
++                .connection,
++                .uptime,
++                .frequency,
++                .battery
++            ]
++
+             sections = [
+                 .device,
+                 .rileyLinkCommands
+@@ -297,6 +312,9 @@ public class RileyLinkDeviceTableViewController: UITableViewController {
+         switch device.hardwareType {
+         case .riley:
+             readDiagnosticLEDMode()
++        case .ema:
++            device.updateBatteryLevel()
++            readDiagnosticLEDMode()
+         case .orange:
+             device.updateBatteryLevel()
+             device.orangeWritePwd()
