@@ -65,11 +65,12 @@ As of Apr 2021, the following EmaLink versions are available:
     * AndroidAPS with Omnipod pods: 7 days
     * AndroidAPS with Medtronic pumps: 3 days
     
-**EmaLink Nano** (PCB: 5.x, Battery: 250mAh)
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Nano.png)
+**(New) EmaLink Nano** (PCB: 6.x, Battery: 250mAh)
+![Case](https://github.com/sks01/EmaLink/blob/master/pictures/NeoNano.png)
 *	This is a smallest version of EmaLink that ofers a weekly charging cycle. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Maxx, Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/bE5cdci4nX8)
+*	(New) The new case offers the option to keep it on a smartwatch wristband also
 *  Communication range to Omnipod: 20ft / 6meters
-*  Size: 41x31x12mm dustproof, splash resistant
+*  Size: 40x29x14mm dustproof, splash resistant
 *	Weight: 18g
 *	Battery life: 
     * Loop/FreeAPS with Omnipod pod: 7 days
@@ -99,6 +100,7 @@ See the [hardware](https://github.com/sks01/emalink/tree/master/hardware) direct
 
 ![PCB_v4.0](https://github.com/sks01/EmaLink/blob/master/pictures/EL_PCB_v4.0.png)
 ![PCB_v5.0](https://github.com/sks01/EmaLink/blob/master/pictures/Nano_PCB.png)
+![PCB_v6.2](https://github.com/sks01/EmaLink/blob/master/pictures/Nano_PCB.png)
 
 ### Firmware
 
