@@ -67,7 +67,7 @@ As of Apr 2021, the following EmaLink versions are available:
     
 **(New) EmaLink Nano** (PCB: 6.x, Battery: 250mAh)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/NeoNano.png)
-*	This is a smallest version of EmaLink that ofers a weekly charging cycle. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Maxx, Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/bE5cdci4nX8)
+*	This is a smallest version of EmaLink that ofers a weekly charging cycle. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Maxx, Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/8f53n3FM0Ly)
 *	(New) The new case offers the option to keep it on a smartwatch wristband also
 *  Communication range to Omnipod: 20ft / 6meters
 *  Size: 40x29x14mm dustproof, splash resistant
