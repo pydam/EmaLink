@@ -48,6 +48,8 @@ As of Apr 2021, the following EmaLink versions are available:
     *	Loop/FreeAPS with other Medtronic pumps: 10 days
     * AndroidAPS with Omnipod pods: 15 days
     *	AndroidAPS with Medtronic pumps: 7 days
+**(New) EmaLink Standard QI** (PCB: 4.x, Battery: 500mAh)
+EmaLink Standard QI has the same physical characteristics as EmaLink Standard, it just adds QI charging to an already very robust EmaLink.
 
 **EmaLink Micro** (PCB: 4.x, Battery: 250mAh) 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Micro.png)
@@ -62,7 +64,7 @@ As of Apr 2021, the following EmaLink versions are available:
     * AndroidAPS with Omnipod pods: 7 days
     * AndroidAPS with Medtronic pumps: 3 days
     
-**(New) EmaLink Nano** (PCB: 6.x, Battery: 250mAh)
+**EmaLink Nano** (PCB: 6.x, Battery: 250mAh)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/NeoNano.png)
 *	This is a smallest version of EmaLink that ofers a weekly charging cycle. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Maxx, Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/8f53n3FM0Ly)
 *	(New) The new case offers the option to keep it on a smartwatch wristband also
@@ -75,6 +77,9 @@ As of Apr 2021, the following EmaLink versions are available:
     * Loop/FreeAPS with other Medtronic pumps: 5 days
     * AndroidAPS with Omnipod pods: 7 days
     * AndroidAPS with Medtronic pumps: 3 days
+
+**(New) EmaLink Nano QI** (PCB: 6.x, Battery: 250mAh)
+EmaLink Nano QI is slightly thicker vs. EmaLink Nano and lacks the bracelet mounting, but it adds QI charging and a better protection against liquid immersion.
 
 **EmaLink Pico** (PCB: 6.x, Battery: 100mAh)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Pico.png)
