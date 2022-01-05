@@ -23,11 +23,11 @@ Chosing the right version:
 * "Give me a product that has great range, can be charged once per week and can survive through drops and splashes" - Standard fits the bill
 * "I keep forgeting to charge devices, can I have the biggest battery?" - Go for Maxx 
 
-As of Apr 2021, the following EmaLink versions are available:
+As of Jan 2022, the following EmaLink versions are available:
 
 **EmaLink Maxx** (PCB: 4.x, Battery 850mAh)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/NewMaxx.png)
-* Communication range to Omnipod: 55ft / 17meters
+* Communication range to Omnipod: 55ft / 17meters (maximum expected range, check the testing procedure here: https://github.com/sks01/EmaLink/wiki/Communication-range)
 * Size: 55x40x17 mm, oval design with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/2sOWkvGTfb7)
 * Weight: 38g
 * Battery life:
@@ -39,8 +39,8 @@ As of Apr 2021, the following EmaLink versions are available:
 
 **EmaLink Standard** (PCB: 4.x, Battery: 500mAh)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium.png)
-*  Communication range to Omnipod: 60ft / 18meters
-*  Size: 43x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
+*  Communication range to Omnipod: 60ft / 18meters (maximum expected range, check the testing procedure here: https://github.com/sks01/EmaLink/wiki/Communication-range)
+*  Size: 37x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
 *	Weight: 24g
 *	Battery life: 
     *	Loop/FreeAPS with Omnipod pod: 15 days
@@ -48,14 +48,16 @@ As of Apr 2021, the following EmaLink versions are available:
     *	Loop/FreeAPS with other Medtronic pumps: 10 days
     * AndroidAPS with Omnipod pods: 15 days
     *	AndroidAPS with Medtronic pumps: 7 days
-**(New) EmaLink Standard QI** (PCB: 4.x, Battery: 500mAh)
+    *
+**EmaLink Standard QI** (PCB: 4.x, Battery: 500mAh)
 EmaLink Standard QI has the same physical characteristics as EmaLink Standard, it just adds QI charging to an already very robust EmaLink.
+The communication range of Standard QI will be reduced while placed on a QI charger as big metallic parts are close to Standard QI. Don't leave it on a QI charger for extended periods to avoid red loops.
 
 **EmaLink Micro** (PCB: 4.x, Battery: 250mAh) 
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Micro.png)
 *	This is the smallest version of EmaLink optimized for use away from your body. If you cary EmaLink with you most time, go for Nano. If you have a mixed usage, try Standard.
-*  Communication range to Omnipod: 55ft / 17meters
-*  Size: 43x41x12mm, dustproof, splash resistant, square [Tinkercad](https://www.tinkercad.com/things/kaO3JdWCOXo)
+*  Communication range to Omnipod: 55ft / 17meters (maximum expected range, check the testing procedure here: https://github.com/sks01/EmaLink/wiki/Communication-range)
+*  Size: 37x41x12mm, dustproof, splash resistant, square [Tinkercad](https://www.tinkercad.com/things/kaO3JdWCOXo)
 *	Weight: 20g
 *	Battery life: 
     * Loop/FreeAPS with Omnipod pod: 7 days
@@ -68,7 +70,7 @@ EmaLink Standard QI has the same physical characteristics as EmaLink Standard, i
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/NeoNano.png)
 *	This is a smallest version of EmaLink that ofers a weekly charging cycle. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Maxx, Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/8f53n3FM0Ly)
 *	(New) The new case offers the option to keep it on a smartwatch wristband also
-*  Communication range to Omnipod: 20ft / 6meters
+*  Communication range to Omnipod: 20ft / 6meters (maximum expected range, check the testing procedure here: https://github.com/sks01/EmaLink/wiki/Communication-range)
 *  Size: 40x29x14mm dustproof, splash resistant
 *	Weight: 18g
 *	Battery life: 
@@ -78,13 +80,14 @@ EmaLink Standard QI has the same physical characteristics as EmaLink Standard, i
     * AndroidAPS with Omnipod pods: 7 days
     * AndroidAPS with Medtronic pumps: 3 days
 
-**(New) EmaLink Nano QI** (PCB: 6.x, Battery: 250mAh)
+**EmaLink Nano QI** (PCB: 6.x, Battery: 250mAh)
 EmaLink Nano QI is slightly thicker vs. EmaLink Nano and lacks the bracelet mounting, but it adds QI charging and a better protection against liquid immersion.
+The communication range of Nano QI will be reduced while placed on a QI charger as big metallic parts are close to Nano QI. Don't leave it on a QI charger for extended periods to avoid red loops.
 
-**EmaLink Pico** (PCB: 6.x, Battery: 100mAh)
+**EmaLink Pico** (PCB: 6.x, Battery: 150mAh)
 ![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Pico.png)
 *	This is the smallest version of EmaLink, made to be used on a smartwatch bracelet or as a necklace. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Maxx, Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/7W1o2zNBAIm)
-*  Communication range to Omnipod: 20ft / 6meters
+*  Communication range to Omnipod: 20ft / 6meters (maximum expected range, check the testing procedure here: https://github.com/sks01/EmaLink/wiki/Communication-range)
 *  Size: 41x29x12mm dustproof, splash resistant
 *	Weight: 12g
 *	Battery life: 
