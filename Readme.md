@@ -2,12 +2,20 @@
 
 A device that bridges the communication between Loop software application and Omnipod and Medtronic insulin pumps. This is a fork from RileyLink, focusing on reducing size of the device, improving communication range and extending battery life. Also, you can charge EmaLink with any micro USB charger - much broader available vs. the mini port USB used by RileyLink.
 
+### Turning on
+Use a nail, a small plastic or a wood bit to move the power switch towards the USB port. When EmaLink is powered on, you should see a red and a green LED turning on for 1 second.
+
+### Connecting EmaLink to Loop/FreeAPS/AndroidAPS
+Please follow the instructions provided by each application for connecting to EmaLink, the procedure is the same as for RileyLink, just the name of the device will be EmaLink.Once EmaLink is connected to Loop/FreeAPS/AndroidAPS, a green led will start blinking every 3 seconds on EmaLink.
+
 ### Charging
 
-You can use any micro USB charges from a phone, tablet, headset or other devices. You can even use a powerbank to charge it if it has a micro USB cable. 
-Charging is considered finished after the red led (the one close to the USB connector) is turning off. It may take up to 3 hours for Nano or Micro to fully charge, up to 5 hours for Standard or Maxx.
+Once the battery gets almost depleted, a red led will start blinking every 3 seconds.
+To charge it, you can use any micro USB charger from a phone, tablet, headset or another device. You can even use a power bank to charge it if it has a micro USB cable. Charging is considered finished after the red led (the one close to the USB connector) is turned off. It may take up to 3 hours for Nano.
+For QI versions, charging can be also done with any QI compatible charge. Place EmaLink with the coil (you can see a round, copper coil, through the case) down on the middle of the QI charger and check that a red led is lighting from the top of the EmaLink. Once charging is completed, you should remove EmaLink from the charger as the charger reduces communication range.
+Charging can be done every few days until EmaLink is fully charged (the red led turned off) or for a few minutes every day, depending on your schedule. Overnight charging also works well with a Micro USB charge but avoid leaving QI versions on the QI charger overnight as this reduced communication range and may generate red loops.
 
-### LED Lights
+### LED Lights 
 
 There are 3 leds on the back of the device: a red one, close to the micro USB charging port, and a red + green cluster on the other side. First, turn the EmaLink on by flipping the switch located next to the micro USB port. After you switch-on EmaLink, the red + green cluster will light-up for 1 second. When you connect EmaLink to AAPS on Loop over bluetooth, the green led will start blinking every 3 seconds. The green led will stop blinking once battery is almost depleted. The red led will start blinking once battery is almost depleted, you should consider charging it in the next few hours.
 
