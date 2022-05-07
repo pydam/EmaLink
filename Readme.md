@@ -24,96 +24,9 @@ There are 3 leds on the back of the device: a red one, close to the micro USB ch
 I have designed a new case to be 3D printed with TPU material. TPU is a flexbile material that cannot be shattered, this makes EmaLink
 drop proof. There are several case styles to chose from, pick the one that makes most sense for your needs.
 
-Chosing the right version:
-* "I would like to keep EmaLink on my bracelet" - Pico is the right choice
-* "I keep EmaLink with me most time, the smaller - the better" - Nano is the way to go
-* "Having the best range while keeping a small size is important to me" - Micro is the perfect fit
-* "Give me a product that has great range, can be charged once per week and can survive through drops and splashes" - Standard fits the bill
-* "I keep forgeting to charge devices, can I have the biggest battery?" - Go for Maxx 
-
-As of Jan 2022, the following EmaLink versions are available:
-
-**EmaLink Maxx** (PCB: 4.x, Battery 850mAh)
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/NewMaxx.png)
-* Communication range to Omnipod: 55ft / 17meters (maximum expected range, check the testing procedure here: https://github.com/sks01/EmaLink/wiki/Communication-range)
-* Size: 55x40x17 mm, oval design with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/2sOWkvGTfb7)
-* Weight: 38g
-* Battery life:
-    *	Loop/FreeAPS with Omnipod pod: 30 days
-    * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 4 days (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 18 days
-    * Loop/FreeAPS with other Medtronic pumps - 18 days
-    * AndroidAPS with Omnipod pods: 30 days
-    * AndroidAPS with Medtronic pumps: 14 days
-
-**EmaLink Standard** (PCB: 4.x, Battery: 500mAh)
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Medium.png)
-*  Communication range to Omnipod: 60ft / 18meters (maximum expected range, check the testing procedure here: https://github.com/sks01/EmaLink/wiki/Communication-range)
-*  Size: 37x40x18mm, square with 2 caps, dustproof, splash resistant [Tinkercad](https://www.tinkercad.com/things/3494lPR24DK)
-*	Weight: 24g
-*	Battery life: 
-    *	Loop/FreeAPS with Omnipod pod: 15 days
-    *	Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 2 days (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 10 days
-    *	Loop/FreeAPS with other Medtronic pumps: 10 days
-    * AndroidAPS with Omnipod pods: 15 days
-    *	AndroidAPS with Medtronic pumps: 7 days
-    *
-**EmaLink Standard QI** (PCB: 4.x, Battery: 500mAh)
-EmaLink Standard QI has the same physical characteristics as EmaLink Standard, it just adds QI charging to an already very robust EmaLink.
-The communication range of Standard QI will be reduced while placed on a QI charger as big metallic parts are close to Standard QI. Don't leave it on a QI charger for extended periods to avoid red loops.
-
-**EmaLink Micro** (PCB: 4.x, Battery: 250mAh) 
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Micro.png)
-*	This is the smallest version of EmaLink optimized for use away from your body. If you cary EmaLink with you most time, go for Nano. If you have a mixed usage, try Standard.
-*  Communication range to Omnipod: 55ft / 17meters (maximum expected range, check the testing procedure here: https://github.com/sks01/EmaLink/wiki/Communication-range)
-*  Size: 37x41x12mm, dustproof, splash resistant, square [Tinkercad](https://www.tinkercad.com/things/kaO3JdWCOXo)
-*	Weight: 20g
-*	Battery life: 
-    * Loop/FreeAPS with Omnipod pod: 7 days
-    * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 16-18 hours (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 5 days
-    * Loop/FreeAPS with other Medtronic pumps: 5 days
-    * AndroidAPS with Omnipod pods: 7 days
-    * AndroidAPS with Medtronic pumps: 3 days
-    
-**EmaLink Nano** (PCB: 6.x, Battery: 250mAh)
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/NeoNano.png)
-*	This is a smallest version of EmaLink that ofers a weekly charging cycle. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Maxx, Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/8f53n3FM0Ly)
-*	(New) The new case offers the option to keep it on a smartwatch wristband also
-*  Communication range to Omnipod: 20ft / 6meters (maximum expected range, check the testing procedure here: https://github.com/sks01/EmaLink/wiki/Communication-range)
-*  Size: 40x29x14mm dustproof, splash resistant
-*	Weight: 18g
-*	Battery life: 
-    * Loop/FreeAPS with Omnipod pod: 7 days
-    * Loop/FreeAPS with Medtronic 523, 554, 723 or 754 pumps  - 16-18 hours (due to MySentry feature, EmaLink uses much more power, which impacts the battery life); With MySentry disabled, battery life increases to 5 days
-    * Loop/FreeAPS with other Medtronic pumps: 5 days
-    * AndroidAPS with Omnipod pods: 7 days
-    * AndroidAPS with Medtronic pumps: 3 days
-
-**EmaLink Nano QI** (PCB: 6.x, Battery: 250mAh)
-EmaLink Nano QI is slightly thicker vs. EmaLink Nano and lacks the bracelet mounting, but it adds QI charging and a better protection against liquid immersion.
-The communication range of Nano QI will be reduced while placed on a QI charger as big metallic parts are close to Nano QI. Don't leave it on a QI charger for extended periods to avoid red loops.
-
-**EmaLink Pico** (PCB: 6.x, Battery: 150mAh)
-![Case](https://github.com/sks01/EmaLink/blob/master/pictures/Pico.png)
-*	This is the smallest version of EmaLink, made to be used on a smartwatch bracelet or as a necklace. The antenna was optimized for keeping it close to your body. It still have a good range while kept around you (nightstand, desk) but for maximum range you should opt for Maxx, Standard or Micro. [Tinkercad](https://www.tinkercad.com/things/7W1o2zNBAIm)
-*  Communication range to Omnipod: 20ft / 6meters (maximum expected range, check the testing procedure here: https://github.com/sks01/EmaLink/wiki/Communication-range)
-*  Size: 41x29x12mm dustproof, splash resistant
-*	Weight: 12g
-*	Battery life: 
-    * Loop/FreeAPS/AndroidAPS with Omnipod pod:  2.5 days
-    * Loop/FreeAPS with Medtronic pumps: 20-24 hours (make sure you disable MySentry, this will improve communication and batery life)
-    * AndroidAPS with Medtronic pumps: not recommended, battery life is too short
-
-![versions](https://github.com/sks01/EmaLink/blob/master/pictures/Compare1.png)
-![versions](https://github.com/sks01/EmaLink/blob/master/pictures/Compare2.png)
-![versions](https://github.com/sks01/EmaLink/blob/master/pictures/Compare3.png)
-
 ### Hardware
 
 See the [hardware](https://github.com/sks01/emalink/tree/master/hardware) directory for design files to build it. The hardware design is released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).  
-
-![PCB_v4.0](https://github.com/sks01/EmaLink/blob/master/pictures/EL_PCB_v4.0.png)
-![PCB_v5.0](https://github.com/sks01/EmaLink/blob/master/pictures/Nano_PCB.png)
-![PCB_v6.2](https://github.com/sks01/EmaLink/blob/master/pictures/Nano_PCB.png)
 
 ### Firmware
 
